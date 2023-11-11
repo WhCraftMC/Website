@@ -63,13 +63,13 @@ import { useRoute } from 'vue-router';
 const route = useRoute();
 const userId = route.query.id;
   
-async function fetchNameData(uuid: string): Promise<string> {
+async function fetchNameData(uuid: string) {
     try {
         const response = await axios.get(`${import.meta.env.VITE_API_URL}/punish/getname/${uuid}`);
         const name = <string>response.data.data[0]?.name;
         return name;
     } catch (error) {
-        throw new Error(error);
+        console.error(error);
     }
 }
   
@@ -104,6 +104,7 @@ function formattedTime(timestamp: number, untime: boolean) {
 }
   
 interface BanData {
+    name: string;
     id: number;
     uuid: string;
     banned_by_uuid: string;

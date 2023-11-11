@@ -41,13 +41,13 @@
 import { ref } from 'vue';
 import axios from 'axios';
 
-async function fetchNameData(uuid: string): Promise<string> {
+async function fetchNameData(uuid: string) {
   try {
     const response = await axios.get(`${import.meta.env.VITE_API_URL}/punish/getname/${uuid}`);
     const name = <string>response.data.data[0]?.name;
     return name;
   } catch (error) {
-    throw new Error(error);
+    console.error(error);
   }
 }
 
@@ -59,7 +59,7 @@ function warnbyface(uuid: string) {
   }
 }
 
-function openPage(id: string) {
+function openPage(id: number) {
   window.location.href = ('/punish?type=warns&id=' + id);
 }
 
@@ -86,6 +86,7 @@ function formattedTime(timestamp: number, untime: boolean) {
 }
 
 interface WarnData {
+  name: string;
   id: number;
   uuid: string;
   banned_by_uuid: string;
