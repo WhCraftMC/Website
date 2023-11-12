@@ -1,7 +1,7 @@
 <template>
 	<div class="main-section">
     <img src="@/assets/images/logos/noicon.logo.png" alt="logo" class="logo">
-		<h3>Minecraft 小型群组服</h3>
+		<h2>Minecraft 小型群组服</h2>
 		<div class="arrow-scroll" @click="scroolDown">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16pt" height="16pt" class="arrow-down" style="isolation: isolate;">
 				<defs>
@@ -45,6 +45,8 @@
 </template>
 
 <script setup lang="ts">
+import Hitokoto from '@/utils/HitokotoUtils';
+
 function scroolDown() {
   window.scrollTo(0, window.innerHeight);
 }
@@ -73,9 +75,20 @@ function scroolDown() {
   place-items: center;
   text-align: center;
 
+  h2 {
+    padding: 1rem 0;
+    text-shadow: 0 2.5px 0 #000000;
+    color: white;
+    word-spacing: 5px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    width: 85%;
+    font-weight: 100;
+    font-style: normal;
+  }
+
   h3 {
     padding: 1rem 0;
-    font-family: 'Minecraft';
     text-shadow: 0 2.5px 0 #000000;
     color: white;
     word-spacing: 5px;
