@@ -1,7 +1,8 @@
 <template>
 	<div class="join">
 		<section class="join-section" style="background-image: url(&quot;/images/banners/original_image.jpg&quot;);">
-			<h2>关于</h2>
+			<h2>如何加入服务器</h2>
+      <p>本章讲述了如何游玩服务器。</p>
 		</section>
 
 		<main>
@@ -17,13 +18,13 @@
                 <p>你可以使用任意启动器启动国际Java，如PCL、HCML、BakaXL等，本篇使用HCML作为举例。</p>
                 <h2>启动你的游戏</h2>
                 <p>点击 "启动游戏" 后等待游戏启动</p>
-                <img src="../../../assets/images/docs/000-how_join/000-start_game.png" alt="启动游戏"/>
+                <img src="../../../assets/images/docs/000-how_join/001-start_game.png" alt="启动游戏"/>
                 <h2>添加服务器</h2>
                 <p>进入游戏后点击 "多人游戏"</p>
                 <img src="../../../assets/images/docs/000-how_join/001-join_add000.png" alt="点击多人游戏"/>
                 <p>点击 "添加服务器"</p>
                 <img src="../../../assets/images/docs/000-how_join/001-join_add001.png" alt="点击添加服务器"/>
-                <p>在 "服务器地址栏" 填入服务器IP,可<router-link to="docs/getserverip" class="boldfonts">在此</router-link>获取服务器IP。</p>
+                <p>在 "服务器地址" 栏填入服务器IP,可<router-link to="docs/getserverip" class="boldfonts">在此</router-link>获取服务器IP。</p>
                 <img src="../../../assets/images/docs/000-how_join/001-join_add002.png" alt="填入服务器地址"/>
                 <p>点击 "完成" 保存配置。</p>
                 <img src="../../../assets/images/docs/000-how_join/001-join_add003.png" alt="点击保存配置"/>
@@ -32,7 +33,17 @@
 
                 <h1>手机端</h1>
                 手机端(即基岩)，可以直接加入服务器。
-                <h2></h2>
+                <h2>添加服务器</h2>
+                <p>点击 "游戏"</p>
+                <img src="../../../assets/images/docs/000-how_join/002-add_000.png" alt="点击游戏"/>
+                <p>点击 "服务器" 然后滑动到最底部点击 "添加服务器"</p>
+                <img src="../../../assets/images/docs/000-how_join/002-add_004.png" alt="点击服务器"/>
+                <p>在 "服务器名称" 栏填入你想要填入的服务器名称，在 "服务器地址" 栏填入服务器IP，在 "端口" 栏修改端口，可<router-link to="docs/getserverip" class="boldfonts">在此</router-link>获取服务器IP。</p>
+                <img src="../../../assets/images/docs/000-how_join/002-add_001.png" alt="填入服务器信息"/>
+                <p>点击 "保存" 或 "游戏"</p>
+                <img src="../../../assets/images/docs/000-how_join/002-add_002.png" alt="点击保存"/>
+                <p>点击服务器， 点击 "加入服务器"</p>
+                <img src="../../../assets/images/docs/000-how_join/002-add_003.png" alt="点击游戏"/>
 			</div>
 		</main>
 	</div>
