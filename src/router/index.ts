@@ -17,7 +17,7 @@ const router = createRouter({
       meta: {
         title: '关于'
       },
-      component: () => import('@/views/about/index.vue')
+      component: () => import('@/views/docs/about/index.vue')
     },
     {
       path: '/punish',
@@ -34,6 +34,14 @@ const router = createRouter({
         title: '如何加入'
       },
       component: () => import('@/views/docs/join/index.vue')
+    },
+    {
+      path: '/docs/getserverip',
+      name: 'getserverip',
+      meta: {
+        title: '服务器要求'
+      },
+      component: () => import('@/views/docs/getserverip/index.vue')
     },
     {
       path: '/404',

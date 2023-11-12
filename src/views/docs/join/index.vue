@@ -13,7 +13,7 @@
                 <li>一台可用的电脑或可用的Android手机。</li>
                 <li>可用且通畅的网络。</li>
                 <li>对于电脑端: 一个可用的启动器。</li>
-                <li>对于手机端: 一个可用的符合 <router-link to="/docs/">要求</router-link> 的客户端。</li>
+                <li>对于手机端: 一个可用的符合 <router-link to="/docs/getserverip">要求</router-link> 的客户端。</li>
                 <h1>电脑端</h1>
                 <p>你可以使用任意启动器启动国际Java，如PCL、HCML、BakaXL等，本篇使用HCML作为举例。</p>
                 <h2>启动你的游戏</h2>
