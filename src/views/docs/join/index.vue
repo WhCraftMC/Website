@@ -12,22 +12,27 @@
                 <li>一台可用的电脑或可用的Android手机。</li>
                 <li>可用且通畅的网络。</li>
                 <li>对于电脑端: 一个可用的启动器。</li>
+                <li>对于手机端: 一个可用的符合 <router-link to="/docs/">要求</router-link> 的客户端。</li>
                 <h1>电脑端</h1>
                 <p>你可以使用任意启动器启动国际Java，如PCL、HCML、BakaXL等，本篇使用HCML作为举例。</p>
                 <h2>启动你的游戏</h2>
                 <p>点击 "启动游戏" 后等待游戏启动</p>
-                <img src="../../../assets/images/docs/000-how_join/000-start_game.png" alt="启动游戏" />
+                <img src="../../../assets/images/docs/000-how_join/000-start_game.png" alt="启动游戏" loading="lazyload"/>
                 <h2>添加服务器</h2>
                 <p>进入游戏后点击 "多人游戏"</p>
-                <img src="../../../assets/images/docs/000-how_join/001-join_add000.png" alt="点击多人游戏" />
+                <img src="../../../assets/images/docs/000-how_join/001-join_add000.png" alt="点击多人游戏" loading="lazyload"/>
                 <p>点击 "添加服务器"</p>
-                <img src="../../../assets/images/docs/000-how_join/001-join_add001.png" alt="点击添加服务器" />
+                <img src="../../../assets/images/docs/000-how_join/001-join_add001.png" alt="点击添加服务器" loading="lazyload"/>
                 <p>在 "服务器地址栏" 填入服务器IP,可<router-link to="docs/getserverip" class="boldfonts">在此</router-link>获取服务器IP。</p>
-                <img src="../../../assets/images/docs/000-how_join/001-join_add002.png" alt="填入服务器地址" />
+                <img src="../../../assets/images/docs/000-how_join/001-join_add002.png" alt="填入服务器地址" loading="lazyload"/>
                 <p>点击 "完成" 保存配置。</p>
-                <img src="../../../assets/images/docs/000-how_join/001-join_add003.png" alt="点击保存配置" />
+                <img src="../../../assets/images/docs/000-how_join/001-join_add003.png" alt="点击保存配置" loading="lazyload"/>
                 <p>点击 "服务器图标" 两次进入服务器。</p>
-                <img src="../../../assets/images/docs/000-how_join/001-join_add004.png" alt="加入服务器" />
+                <img src="../../../assets/images/docs/000-how_join/001-join_add004.png" alt="加入服务器" loading="lazyload"/>
+
+                <h1>手机端</h1>
+                手机端(即基岩)，可以直接加入服务器。
+                <h2></h2>
 			</div>
 		</main>
 	</div>
@@ -102,8 +107,6 @@
       }
 
       img {
-        width: 880px;
-        height: 500px;
         object-fit: contain;
         max-width: 100vw;
       }
@@ -113,6 +116,30 @@
   hr {
     border-color: rgb(146, 146, 146);
     margin: 0.4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .join main .container img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .join main .container img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .join main .container img {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .join main .container img {
+    width: 55%;
   }
 }
 </style>
