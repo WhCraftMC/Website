@@ -1,5 +1,5 @@
 <template>
-    <div class="NotFound-container bg-wool-dark">
+    <div class="NotFound-container">
         <h2>404 页面不存在</h2>
         <router-link to="/" class="button-text">返回首页</router-link>
     </div>
