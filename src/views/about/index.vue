@@ -15,7 +15,7 @@
                 <p><span class="boldfonts">无条件捐赠:</span>我们仅接受无条件的捐赠来支付服务器的运行和维护费用。这是出于对玩家之间平等和公平的尊重，确保所有人都能够享受到游戏的乐趣。</p>
                 <h1>加入我们</h1>
                 <p>如果你对公益事业有热情，并渴望在一个纯净、公平和友善的Minecraft社区中畅玩游戏，我们欢迎你加入我们的公益群组服！</p>
-                <p>详细信息请阅读: <a class="boldfonts" href="/join">如何加入</a>。</p>
+                <p>详细信息请阅读: <router-link class="boldfonts" to="/docs/join">如何加入</router-link>。</p>
 			</div>
 		</main>
 	</div>

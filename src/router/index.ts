@@ -28,6 +28,14 @@ const router = createRouter({
       component: () => import('@/views/punish/index.vue')
     },
     {
+      path: '/docs/join',
+      name: 'join',
+      meta: {
+        title: '如何加入'
+      },
+      component: () => import('@/views/docs/join/index.vue')
+    },
+    {
       path: '/404',
       name: 'NotFound',
       meta: {
