@@ -41,9 +41,9 @@
 						<div class="container">
 							<nav>
 								<ul>
-                  <li><a href="/">首页</a></li>
-									<li><a href="/about">关于</a></li>
-                  <li><a href="/punish">处罚</a></li>
+                  <li><RouterLink to="/" class="linkto">首页</RouterLink></li>
+									<li><RouterLink to="/about" class="linkto">关于</RouterLink></li>
+                  <li><RouterLink to="/punish" class="linkto">处罚</RouterLink></li>
 								</ul>
 							</nav>
 						</div>
@@ -311,7 +311,7 @@ function toggle() {
       color: white;
     }
 
-    a {
+    .linkto {
       display: block;
       width: 100%;
       padding: 0.5rem 2rem;

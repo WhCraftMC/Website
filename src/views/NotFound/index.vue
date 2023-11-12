@@ -1,7 +1,7 @@
 <template>
     <div class="NotFound-container bg-wool-dark">
         <h2>404 页面不存在</h2>
-        <a href="/" class="button-text">返回首页</a>
+        <router-link to="/" class="button-text">返回首页</router-link>
     </div>
 </template>
 
