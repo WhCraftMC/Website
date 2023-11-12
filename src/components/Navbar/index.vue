@@ -2,10 +2,10 @@
 	<header class="navbar">
 		<div class="container">
       <!-- Logo -->
-			<a class="nav-logo" href="/">
+			<router-link to="/" class="nav-logo">
 				<img src="data:image/png;base64,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" alt="logo">
 				WhCraft
-			</a>
+			</router-link>
 
       <!-- 顶部栏 -->
 			<nav class="header-nav">
@@ -41,9 +41,16 @@
 						<div class="container">
 							<nav>
 								<ul>
+                  <h1>站内链接</h1>
                   <li><RouterLink to="/" class="linkto">首页</RouterLink></li>
-									<li><RouterLink to="/about" class="linkto">关于</RouterLink></li>
                   <li><RouterLink to="/punish" class="linkto">处罚</RouterLink></li>
+                  <h2>文档</h2>
+									<li><RouterLink to="/docs/about" class="linkto">关于</RouterLink></li>
+                  <li><RouterLink to="/docs/join" class="linkto">如何加入服务器</RouterLink></li>
+                  
+                  <h1>站外链接</h1>
+                  <li><a class="linkto" href="https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=LKGqhY1rbN-sBSEXD1KI4QEdgDZhqDxj&authKey=KqSa1W1IXnLIUV7dtKJopzYIrLyWryrsfYVMmZkoZlBpu5x%2BwztyHf1oLyQO6jP8&noverify=0&group_code=703062404" target="_blank">加入QQ群</a></li>
+                  <li><a class="linkto" href="https://github.com/WhCraftMC" target="_blank">Github</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -265,6 +272,22 @@ function toggle() {
     height: max-content;
     padding: 1rem 0;
     overflow-x: hidden;
+
+    h1 {
+      color: #fff;
+      font-weight: 100;
+      font-size: 1.8rem;
+      margin-left: 1.2rem;
+      padding: 1.2rem 0 0;
+    }
+
+    h2 {
+      color: #fff;
+      font-weight: 100;
+      font-size: 1.45rem;
+      margin-left: 1.55rem;
+      padding: 1.2rem 0 0;
+    }
   }
 
   &.open {
