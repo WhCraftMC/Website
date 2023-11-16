@@ -39,7 +39,7 @@ const updatePassword = (event: any) => {
   password.value = event.target.value;
 };
 const updateRule = (event: any) => {
-  rule.value = !(rule.value);
+  rule.value = event.target.value;
 };
 const userPattern = /\b^[a-zA-Z0-9_]*\b/
 const passwordPattern = /\b^[a-zA-Z0-9!-~_]*\b/
