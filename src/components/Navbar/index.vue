@@ -10,6 +10,15 @@
       <!-- 顶部栏 -->
 			<nav class="header-nav">
 				<ul>
+          <button class="hamburger-btn">
+            <div v-if="true" style="color: white; text-align: center;">
+              <h2 style="padding-left: 5px;"><img src="https://skin.fxcraft.cn/avatar/0?size=36" />bilirumble</h2>
+            </div>
+            <div style="color: white" v-if="false">
+              <h2><i class="mdui-icon material-icons">&#xe853;</i> 请登录</h2>
+            </div>
+          </button>
+
           <!-- 开关菜单按钮 -->
 					<button class="hamburger-btn" @click="toggle">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16pt" height="16pt" style="isolation: isolate;" :class="{hide: isOpen}">

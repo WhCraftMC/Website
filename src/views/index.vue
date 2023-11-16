@@ -16,12 +16,14 @@
     </div>
 	</div>
 
-  <main>
-  	<div class="news bg-wool-dark">
-	  	<div class="container">
-        <div class="heading">
+  <main class="mcui-blackground-wool-dark">
+    <br><br>
+  	<div class="news">
+	  	<div class="container mcui-dialog">
+        <div class="heading mcui-alert">
           <h2>最新消息</h2>
         </div>
+
         <div class="slick-track">
           <div class="news-card">
             <img src="https://www.minecraft.net/content/dam/games/minecraft/screenshots/nautilusshell-car.jpg" alt="news-img">
@@ -45,8 +47,6 @@
 </template>
 
 <script setup lang="ts">
-import Hitokoto from '@/utils/HitokotoUtils';
-
 function scroolDown() {
   window.scrollTo(0, window.innerHeight);
 }
@@ -198,9 +198,13 @@ function scroolDown() {
     justify-content: center;
     max-width: 100vw;
 
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+
     h2 {
       font-size: 28px;
-      padding-bottom: 2rem;
+      margin-left: 6px!important;
+      margin-right: 6px!important;
     }
   }
 

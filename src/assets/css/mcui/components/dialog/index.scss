@@ -1,0 +1,15 @@
+.mcui-dialog {
+    color: #fff;
+    background: #8b8b8b;
+    border-radius: 16px;
+    border: 16px solid transparent;
+    border-image: url(./images/dialog.png) 8 fill repeat;
+}
+
+.mcui-alert {
+    color: #fff;
+    border-radius: 16px;
+    border: 8px solid transparent;
+    border-image: url(./images/alert.png) 4 fill repeat;
+    position: relative;
+}

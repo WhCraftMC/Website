@@ -1,6 +1,8 @@
-import '@/assets/global.scss'
-import '@/assets/base.scss'
+import '@/assets/css/global.scss'
+import '@/assets/css/mcui/all.scss'
 
+import 'mdui/mdui.css';
+import 'mdui';
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'

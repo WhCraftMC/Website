@@ -44,6 +44,14 @@ const router = createRouter({
       component: () => import('@/views/docs/getserverip/index.vue')
     },
     {
+      path: '/dash',
+      name: 'dispatchEvent',
+      meta: {
+        title: '用户中心',
+      },
+      component: () => import('@/views/dash/index.vue')
+    },
+    {
       path: '/404',
       name: 'NotFound',
       meta: {
