@@ -41,6 +41,7 @@
 import { ref } from 'vue';
 import axios from 'axios';
 import { RawText, setLength } from '../../utils/textColor';
+import router from '@/router';
 
 async function fetchNameData(uuid: string) {
   try {

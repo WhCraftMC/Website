@@ -14,10 +14,12 @@
 import warns from "./warns.vue";
 import Warninfo from "./warninfo.vue";
 import { useRoute } from 'vue-router';
+import router from "@/router";
 
 const route = useRoute();
+
 function goto(url: string) {
-  window.location.href = url;
+  router.push(url);
 }
 </script>
 

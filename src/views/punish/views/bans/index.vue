@@ -14,12 +14,13 @@
 import bans from "./bans.vue";
 import baninfo from "./baninfo.vue";
 import { useRoute } from 'vue-router';
+import router from "@/router";
 
 const route = useRoute();
 const userId = route.query.id;
 
 function goto(url: string) {
-  window.location.href = url;
+  router.push(url);
 }
 </script>
 
