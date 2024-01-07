@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       progress: 0,
-      ok: !this.$data.loading,
+      ok: false,
       show: true
     }
   },
@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     // 更新进度条
-    updateProgress(value) {
+    updateProgress(value: any) {
       this.progress = value
     }
   }
