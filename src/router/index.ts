@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import mainRoute from './routers/mainRouters';
 import errorRoute from './routers/errorRouters';
+import { log } from 'console';
 
 const routes: Array<RouteRecordRaw> = [
   ...mainRoute,
@@ -20,7 +21,9 @@ router.beforeEach((to, from, next) => {
   }
 
   if (to.meta.description) {
-    document.meta.description = to.meta.description;
+    //document.meta.description = to.meta.description;
+    console.log("");
+    
   }
   next();
 });
