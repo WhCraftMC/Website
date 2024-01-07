@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       progress: 0,
-      ok: false,
+      ok: true,
       show: true
     }
   },
