@@ -24,8 +24,8 @@ function goto(url: string) {
     .button_container {
         display: flex;
 
-        a {
-          margin: 20px;
+        button {
+          margin: 10px;
         }
     }
 }

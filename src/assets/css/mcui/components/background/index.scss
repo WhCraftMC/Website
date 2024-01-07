@@ -16,12 +16,37 @@
     background-image: url(./images/bg-wool-green.png);
 }
 
-.mcui-background-btow-wool-black {
+.mcui-br-blackground-wool-dark {
+    height: 75px;
+    background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
+}
+
+.mcui-background-trans-to-light {
     background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-top-darkwool.png);
 }
 
-.mcui-background-wtob-wool-dark {
+.woolbgTop {
+    height: 100px;
+    display: block;
+    background-position-x: -710px;
+    background-repeat: repeat-x!important;
+    width: 100%;
+    margin-top: -1px;
+    margin-bottom: 50px;
+}
+
+.mcui-background-trans-to-dark {
     background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/trans-bottom-darkwool.png);
+}
+
+.woolbgBot {
+    height: 100px;
+    display: block;
+    background-position-x: -815px;
+    background-repeat: repeat-x!important;
+    width: 100%;
+    margin-bottom: -1px;
+    margin-top: 50px;
 }
 
 .mcui-background-wool-light {
@@ -30,4 +55,8 @@
 
 .mcui-blackground-wool-dark {
     background-image: url(https://www.minecraft.net/content/dam/minecraft/backgrounds/bg-wool-dark.png);
+}
+
+.text-black {
+    color: var(--dark-text-color);
 }

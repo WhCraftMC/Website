@@ -32,7 +32,7 @@
             </tr>
             <tr>
                 <td>原因</td>
-                <td>{{ warn.reason }}</td>
+                <td>{{ RawText(warn.reason) }}</td>
             </tr>
             <tr>
                 <td>日期</td>
@@ -59,6 +59,7 @@
 import { ref } from 'vue';
 import axios from 'axios';
 import { useRoute } from 'vue-router';
+import { RawText } from '../../utils/textColor';
 
 const route = useRoute();
 const userId = route.query.id;
