@@ -321,8 +321,31 @@ function toggle() {
     width: 100%;
     overflow-x: hidden;
 
+    h1 {
+      color: white;
+      font-weight: 100;
+      font-size: 2.2rem;
+      margin-left: 1.2rem;
+      padding: 1.2rem 0 0 0;
+    
+      &:first-of-type {
+        padding-top: 0;
+      }
+    }
+
+    h2 {
+      color: white;
+      font-weight: 100;
+      font-size: 2.0rem;
+      margin-left: 1.2rem;
+      padding: 1.2rem 0 0 0;
+    
+      &:first-of-type {
+        padding-top: 0;
+      }
+    }
+
     h3 {
-      font-family: 'MinecraftTen';
       color: white;
       font-weight: 100;
       font-size: 1.8rem;
@@ -335,8 +358,7 @@ function toggle() {
     }
 
     h4 {
-      font-family: 'MinecraftTen';
-      color: rgb(204, 204, 204);
+      color: white;
       font-weight: 100;
       font-size: 1.5rem;
       margin-left: 1.2rem;
