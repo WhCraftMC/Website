@@ -1,8 +1,6 @@
 import '@/assets/css/global.scss';
 import '@/assets/css/mcui/all.scss';
 
-import 'nprogress/nprogress.css';
-
 import 'mdui/mdui.css';
 import 'mdui';
 import { createApp } from 'vue'
