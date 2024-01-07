@@ -58,18 +58,21 @@
         <div class="slick-track">
           <div class="news-card">
             <img src="https://www.minecraft.net/content/dam/games/minecraft/screenshots/nautilusshell-car.jpg" alt="news-img" class="news-img">
-            <h3>更新: 服务器更新至1.13 (填充文本)</h3>
-            <p>2021-05-12 - 怎么一回事?</p>
+            <h3>更新: 服务器更新至1.20.2</h3>
+            <p>2023-12-01 - rumble</p>
+            <p>终于修完Bug了，累死了</p>
           </div>
           <div class="news-card">
             <img src="https://www.minecraft.net/content/dam/games/minecraft/screenshots/cow-car.jpg" alt="news-img" class="news-img">
-            <h3>更新: 牛子(填充文本)</h3>
-            <p>2022-06-18 - 怎么一回事?</p>
+            <h3>活动: 圣诞活动</h3>
+            <p>2022-06-18 - rumble</p>
+            <p>免费称号！确定不看看吗！活动截止2023-12-28</p>
           </div>
           <div class="news-card">
             <img src="https://www.minecraft.net/content/dam/games/badger/screenshots/Spookyfest_carousel.jpg" alt="news-img" class="news-img">
             <h3>活动: 苦力怕之年(填充文本)</h3>
             <p>2022-01-10 - 怎么一回事?</p>
+            <p>我是填充文本</p>
           </div>
         </div>
 		  </div>
