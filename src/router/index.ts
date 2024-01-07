@@ -19,12 +19,6 @@ router.beforeEach((to, from, next) => {
   } else {
     document.title = 'None | WhCraft';
   }
-
-  if (to.meta.description) {
-    //document.meta.description = to.meta.description;
-    console.log("");
-    
-  }
   next();
 });
 
