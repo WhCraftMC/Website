@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import mainRoute from './routers/mainRouters';
 import errorRoute from './routers/errorRouters';
-import { log } from 'console';
 
 const routes: Array<RouteRecordRaw> = [
   ...mainRoute,
@@ -17,7 +16,7 @@ router.beforeEach((to, from, next) => {
   if (to.meta.title) {
     document.title = to.meta.title + ' | WhCraft';
   } else {
-    document.title = 'None | WhCraft';
+    document.title = '无标题 | WhCraft';
   }
   next();
 });
