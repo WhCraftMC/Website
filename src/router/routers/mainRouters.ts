@@ -42,6 +42,14 @@ const mainRoute: Array<RouteRecordRaw> = [
         component: () => import('@/views/docs/getserverip/index.vue')
       },
       {
+        path: '/docs/donate',
+        name: 'donate',
+        meta: {
+          title: '我要恰饭'
+        },
+        component: () => import('@/views/docs/donate/index.vue')
+      },
+      {
         path: '/status',
         name: 'status',
         meta: {
