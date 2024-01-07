@@ -6,7 +6,9 @@ import 'mdui';
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+//import store, { provideStore } from './store'
 
+//provideStore();
 const app = createApp(App)
 
 app.use(router)

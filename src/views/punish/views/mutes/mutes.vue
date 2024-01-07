@@ -27,7 +27,7 @@
               {{ mute.banned_by_name }}
             </p>
           </td>
-          <td>{{ mute.reason }}</td>
+          <td>{{ RawText(mute.reason) }}</td>
           <td>{{ formattedTime(mute.time, false) }}</td>
           <td>{{ formattedTime(mute.until, true) }}</td>
           <td>{{ mute.server_scope }}</td>
@@ -40,6 +40,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import axios from 'axios';
+import { RawText } from '../../utils/textColor';
 
 async function fetchNameData(uuid: string) {
   try {

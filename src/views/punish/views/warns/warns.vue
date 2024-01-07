@@ -27,7 +27,7 @@
               {{ warn.banned_by_name }}
             </p>
           </td>
-          <td>{{ warn.reason }}</td>
+          <td>{{ setLength(RawText(warn.reason), 10) }}</td>
           <td>{{ formattedTime(warn.time, false) }}</td>
           <td>{{ formattedTime(warn.until, true) }}</td>
           <td>{{ warn.server_scope }}</td>
@@ -40,6 +40,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import axios from 'axios';
+import { RawText, setLength } from '../../utils/textColor';
 
 async function fetchNameData(uuid: string) {
   try {
