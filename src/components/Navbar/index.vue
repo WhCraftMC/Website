@@ -59,6 +59,7 @@
                   <li><RouterLink to="/docs/join" class="linkto"><i class="mdui-icon material-icons"></i>&nbsp;如何加入服务器</RouterLink></li>
                   <h2><i class="mdui-icon material-icons"></i>&nbsp;&nbsp;其他</h2>
                   <li><RouterLink to="/docs/donate" class="linkto"><i class="mdui-icon material-icons"></i>&nbsp;捐赠</RouterLink></li>
+                  <li><RouterLink to="#" class="linkto"><i class="mdui-icon material-icons"></i>&nbsp;碧油鸡反馈</RouterLink></li>
                   
                   <h1><i class="mdui-icon material-icons"></i>&nbsp;站外链接</h1>
                   <li><a class="linkto" href="https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=LKGqhY1rbN-sBSEXD1KI4QEdgDZhqDxj&authKey=KqSa1W1IXnLIUV7dtKJopzYIrLyWryrsfYVMmZkoZlBpu5x%2BwztyHf1oLyQO6jP8&noverify=0&group_code=703062404" target="_blank"><i class="mdui-icon material-icons"></i>&nbsp;加入QQ群</a></li>
