@@ -1,6 +1,7 @@
 <template>
     <div class="NotFound-container">
-        <h2>404 页面不存在</h2>
+        <h2>404 NotFound</h2>
+        <p>页面被吃掉啦！</p>
         <router-link to="/" class="button-text">返回首页</router-link>
     </div>
 </template>
@@ -18,6 +19,11 @@
 
   h2 {
     font-size: 2.2rem;
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.1rem;
     padding-bottom: 2rem;
   }
 }
