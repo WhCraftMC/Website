@@ -2,16 +2,12 @@ import type { RouteRecordRaw } from 'vue-router';
 
 const errorRoute: Array<RouteRecordRaw> = [
     {
-      path: '/404',
+      path: '/:pathMatch(.*)',
       name: 'NotFound',
       meta: {
-        title: '404'
+        title: '404 NotFound'
       },
       component: () => import('@/views/NotFound/index.vue')
-    },
-    {
-      path: '/:pathMatch(.*)',
-      redirect: '/404'
     }
 ];
 
