@@ -6,18 +6,21 @@
 		</section>
 		<main>
 			<div class="container">
-				<bans v-if="$route.query.type !== 'mutes' && $route.query.type !== 'warns'" />
-        <mutes v-if="$route.query.type == 'mutes'" />
-        <warns v-if="$route.query.type == 'warns'" />
+				<bans v-if="route.query.type !== 'mutes' && route.query.type !== 'warns'" />
+        <mutes v-if="route.query.type == 'mutes'" />
+        <warns v-if="route.query.type == 'warns'" />
       </div>
 		</main>
 	</div>
 </template>
 
 <script setup lang="ts">
+import { useRoute } from 'vue-router';
 import bans from '@/views/punish/views/bans/index.vue'
 import mutes from '@/views/punish/views/mutes/index.vue'
 import warns from '@/views/punish/views/warns/index.vue'
+
+const route = useRoute();
 </script>
 
 <style scoped lang="scss">

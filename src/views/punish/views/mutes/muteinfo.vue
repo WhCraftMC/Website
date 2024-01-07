@@ -4,7 +4,7 @@
         Go Back
     </a>
     <div class="table-container">
-      <h2>Mute #{{ $route.query.id }}</h2>
+      <h2>Mute #{{ route.query.id }}</h2>
       <table v-if="mutes">
         
         <tbody v-for="mute in mutes">

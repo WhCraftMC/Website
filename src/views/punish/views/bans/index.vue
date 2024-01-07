@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-        <div class="button_container" v-if="$route.query.id == null">
+        <div class="button_container" v-if="route.query.id == null">
           <button class="button-text" disabled>封禁</button>
           <button class="button-text" @click="goto('/punish?type=mutes')">禁言</button>
           <button class="button-text" @click="goto('/punish?type=warns')">警告</button>
         </div>
-        <bans v-if="$route.query.id == null && $route.query.id == undefined" />
-        <baninfo v-if="$route.query.id !== null && $route.query.id !== undefined" />
+        <bans v-if="route.query.id == null && route.query.id == undefined" />
+        <baninfo v-if="route.query.id !== null && route.query.id !== undefined" />
     </div>
 </template>
 

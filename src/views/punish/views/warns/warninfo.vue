@@ -4,7 +4,7 @@
         Go Back
     </a>
     <div class="table-container">
-      <h2>Warn #{{ $route.query.id }}</h2>
+      <h2>Warn #{{ route.query.id }}</h2>
       <table v-if="warns">
         
         <tbody v-for="warn in warns">

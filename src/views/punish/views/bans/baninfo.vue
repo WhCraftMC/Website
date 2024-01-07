@@ -4,7 +4,7 @@
         Go Back
     </a>
     <div class="table-container">
-      <h2>Ban #{{ $route.query.id }}</h2>
+      <h2>Ban #{{ route.query.id }}</h2>
       <table v-if="bans">
         
         <tbody v-for="ban in bans">
