@@ -38,7 +38,7 @@
               <font color="#484a46"><p id="poem-author" style="font-weight: bold"></p></font>
           </div>
           <div class="col-2">
-            <img src="../assets/images/about-image.png" class="img"/>
+            <img src="../assets/images/about-image.png" class="about-img"/>
           </div>
       </div>
       </div>
@@ -57,17 +57,17 @@
 
         <div class="slick-track">
           <div class="news-card">
-            <img src="https://www.minecraft.net/content/dam/games/minecraft/screenshots/nautilusshell-car.jpg" alt="news-img">
+            <img src="https://www.minecraft.net/content/dam/games/minecraft/screenshots/nautilusshell-car.jpg" alt="news-img" class="news-img">
             <h3>更新: 服务器更新至1.13 (填充文本)</h3>
             <p>2021-05-12 - 怎么一回事?</p>
           </div>
           <div class="news-card">
-            <img src="https://www.minecraft.net/content/dam/games/minecraft/screenshots/cow-car.jpg" alt="news-img">
+            <img src="https://www.minecraft.net/content/dam/games/minecraft/screenshots/cow-car.jpg" alt="news-img" class="news-img">
             <h3>更新: 牛子(填充文本)</h3>
             <p>2022-06-18 - 怎么一回事?</p>
           </div>
           <div class="news-card">
-            <img src="https://www.minecraft.net/content/dam/games/badger/screenshots/Spookyfest_carousel.jpg" alt="news-img">
+            <img src="https://www.minecraft.net/content/dam/games/badger/screenshots/Spookyfest_carousel.jpg" alt="news-img" class="news-img">
             <h3>活动: 苦力怕之年(填充文本)</h3>
             <p>2022-01-10 - 怎么一回事?</p>
           </div>
@@ -423,9 +423,10 @@ function scroolDown() {
       .col-2 {
         display: flex;
 
-        .img {
+        .about-img {
           max-width: 100%;
           object-fit: cover;
+          border-radius: 0.375rem;
         }
       }
     }
@@ -526,7 +527,8 @@ function scroolDown() {
         max-width: 100vw;
         margin: 5px;
 
-        img {
+        .news-img {
+          border-radius: 0.375rem;
           width: 440px;
           height: 250px;
           object-fit: cover;
