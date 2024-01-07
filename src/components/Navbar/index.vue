@@ -68,11 +68,13 @@
 				</ul>
 			</nav>
 		</div>
+    <loading />
 	</header>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import loading from './loading.vue'
 
 const isOpen = ref(false);
 function toggle() {

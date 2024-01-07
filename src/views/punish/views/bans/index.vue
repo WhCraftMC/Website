@@ -17,7 +17,6 @@ import { useRoute } from 'vue-router';
 
 const route = useRoute();
 const userId = route.query.id;
-console.log(userId);
 
 function goto(url: string) {
   window.location.href = url;
