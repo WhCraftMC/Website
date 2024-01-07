@@ -61,7 +61,8 @@ function mutebyface(uuid: string) {
 }
 
 function openPage(id: number) {
-  window.location.href = ('/punish?type=mutes&id=' + id);
+  const url = `/punish?type=bans&id=${id}`;
+  router.push(url);
 }
 
 function formattedTime(timestamp: number, untime: boolean) {
