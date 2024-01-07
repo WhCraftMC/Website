@@ -41,6 +41,7 @@
 import { ref } from 'vue';
 import axios from 'axios';
 import { RawText, setLength } from '../../utils/textColor'
+import router from '@/router';
 
 async function fetchNameData(uuid: string) {
   try {
@@ -61,7 +62,8 @@ function banbyface(uuid: string) {
 }
 
 function openPage(id: number) {
-  window.location.href = ('/punish?type=bans&id=' + id);
+  const url = `/punish?type=bans&id=${id}`;
+  router.push(url);
 }
 
 function formattedTime(timestamp: number, untime: boolean) {
