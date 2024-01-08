@@ -2,37 +2,38 @@
 	<div class="getsip">
 		<section class="getsip-section" style="background-image: url(&quot;/images/banners/other_early_console_era.jpg&quot;);">
 			<h2>服务器IP&要求</h2>
-            <p>本章讲述了服务器对客户端的要求。</p>
+      <p>本章讲述了服务器对客户端的要求。</p>
 		</section>
 
 		<main>
-			<div class="container">
+			<article class="container">
 				<h1>获取服务器IP</h1>
-                <p>在这里获取服务器最新IP，可以点击IP地址复制。</p>
-                <h2>Java</h2>
-                <p>IP地址: <spawn @click="copyUrl(jip);">{{ jip }}</spawn></p>
+        <p>在这里获取服务器最新IP，可以点击地址复制。</p>
+        <h2>Java</h2>
+        <p>IP地址: <spawn @click="copyUrl(jip);">{{ `${jip}` }}</spawn></p>
 
-                <h2>基岩</h2>
-                <p>IP地址: <spawn @click="copyUrl(bip);">{{ bip }}</spawn></p>
-                <p>端口: <spawn @click="copyUrl(bpr);">{{ bpr }}</spawn></p>
+        <h2>基岩</h2>
+        <p>IP地址: <spawn @click="copyUrl(bip);">{{ bip }}</spawn></p>
+        <p>端口: <spawn @click="copyUrl(bpr);">{{ bpr }}</spawn></p>
 
-                <h1>对客户端要求</h1>
-                <p>在这里获取对客户端版本的要求</p>
-                <h2>Java</h2>
-                <p>版本要求: 1.8-1.20.2任意版本</p>
-                <p>不支持安装非仅客户端Mod的客户端进入插件/原版生存服。</p>
-                <h2>基岩</h2>
-                <p>版本要求: 1.20.xx.xx</p>
-			</div>
+        <h1>对客户端要求</h1>
+        <p>在这里获取对客户端版本的要求</p>
+        <h2>Java</h2>
+        <p>版本要求: 1.8-1.20.2任意版本</p>
+        <p>不支持安装非仅客户端Mod的客户端进入插件/原版生存服。</p>
+        <h2>基岩</h2>
+        <p>版本要求: 1.20.xx.xx</p>
+			</article>
 		</main>
 	</div>
 
 </template>
 
 <script setup lang="ts">
-const jip = "mc.anjue.link"
-const bip = "mc.anjue.link"
-const bpr = "14418"
+const jip = "mc.whcraft.top"
+const bip = "mc.whcraft.top"
+const bpr = "19132"
+const jpr = "25565"
 
 function copyUrl(val: string) {
     navigator.clipboard.writeText(val);

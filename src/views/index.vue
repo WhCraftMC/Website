@@ -1,5 +1,5 @@
 <template>
-	<div class="main-section">
+	<main class="main-section">
     <img src="@/assets/images/logos/noicon.logo.png" alt="logo" class="logo">
 		<h2>Minecraft 小型群组服</h2>
 		<div class="arrow-scroll" @click="scroolDown">
@@ -14,13 +14,13 @@
 				</g>
 			</svg>
     </div>
-	</div>
+	</main>
 
-  <main class="mcui-blackground-wool-dark">
+  <article class="mcui-blackground-wool-dark">
     <div class="mcui-br-blackground-wool-dark"></div>
     <div class="mcui-br-blackground-wool-dark"></div>
 
-    <div class="mcui-background-wool-light about">
+    <section class="mcui-background-wool-light about">
       <div class="woolbgTop mcui-background-trans-to-light"></div>
 
       <div class="about-container">
@@ -44,12 +44,12 @@
       </div>
 
       <div class="woolbgBot mcui-background-trans-to-dark"></div>
-    </div>
+    </section>
 
     <div class="mcui-br-blackground-wool-dark"></div>
     <div class="mcui-br-blackground-wool-dark"></div>
 
-  	<div class="news">
+  	<section class="news">
 	  	<div class="news-container">
         <div class="heading">
           <h2>最新消息</h2>
@@ -76,12 +76,12 @@
           </div>
         </div>
 		  </div>
-	  </div>
+	  </section>
 
     <div class="mcui-br-blackground-wool-dark"></div>
     <div class="mcui-br-blackground-wool-dark"></div>
 
-    <div class="mcui-background-wool-light info">
+    <section class="mcui-background-wool-light info">
       <div class="woolbgTop mcui-background-trans-to-light"></div>
 
       <h1>服务器简介</h1><br><br>
@@ -137,11 +137,11 @@
 
         </div>
       <div class="woolbgBot mcui-background-trans-to-dark"></div>
-    </div>
+    </section>
 
     <div class="mcui-br-blackground-wool-dark"></div>
 
-    <div class="mcui-background-wool-dark server-list">
+    <section class="mcui-background-wool-dark server-list">
       <h1>服务器列表</h1>
       <h2>多种玩法提供选择</h2>
 
@@ -178,10 +178,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="mcui-br-blackground-wool-dark"></div>
-  </main>
+  </article>
 </template>
 
 <script setup lang="ts">
