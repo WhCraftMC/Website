@@ -541,4 +541,14 @@ function scroolDown() {
     }
   }
 }
+
+@media screen and (max-width: 825px) {
+  .server-list .row {
+    flex-direction: column;
+  }
+  
+  .info .row {
+    flex-direction: column;
+  }
+}
 </style>
