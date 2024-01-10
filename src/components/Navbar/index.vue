@@ -58,7 +58,7 @@
                   <li><RouterLink to="/docs/join" class="linkto"><i class="mdui-icon material-icons"></i>&nbsp;如何加入服务器</RouterLink></li>
                   <h2><i class="mdui-icon material-icons"></i>&nbsp;&nbsp;其他</h2>
                   <li><RouterLink to="/docs/donate" class="linkto"><i class="mdui-icon material-icons"></i>&nbsp;捐赠</RouterLink></li>
-                  <li><RouterLink to="#" class="linkto"><i class="mdui-icon material-icons"></i>&nbsp;碧油鸡反馈</RouterLink></li>
+                  <li><a class="linkto" href="https://bug.whcraft.top" v-if="false"><i class="mdui-icon material-icons"></i>&nbsp;BUG反馈</a></li>
                   
                   <h1><i class="mdui-icon material-icons"></i>&nbsp;站外链接</h1>
                   <li><a class="linkto" href="https://status.whcraft.top" target="_blank"><i class="mdui-icon material-icons"></i>&nbsp;服务状态</a></li>
