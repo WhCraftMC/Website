@@ -48,14 +48,6 @@ const mainRoute: Array<RouteRecordRaw> = [
           title: '我要恰饭'
         },
         component: () => import('@/views/docs/donate/index.vue')
-      },
-      {
-        path: '/status',
-        name: 'status',
-        meta: {
-          title: '服务器状态'
-        },
-        component: () => import('@/views/status/index.vue')
       }
 ];
 
