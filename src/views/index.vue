@@ -38,7 +38,7 @@
               <font color="#484a46"><p id="poem-author" style="font-weight: bold"></p></font>
           </div>
           <div class="col-2">
-            <img src="/images/misc/about-image.png" class="about-img"/>
+            <img src="../assets/images/about-image.png" class="about-img"/>
           </div>
       </div>
       </div>
@@ -151,7 +151,7 @@
         <div class="card">
           <img src="@/assets/images/misc/s-s-1.png" class="img"/>
           <div class="text">
-            <h2>类原版生存</h2>
+            <h2>数据包生存</h2>
             <p>类原版高版本生存服务器，保留原汁原味玩法，享受养老生活。</p>
             <br><br>
             <button class="button-text" disabled>查看状态</button>
