@@ -1,6 +1,6 @@
 <template>
 	<div class="donate">
-		<section class="donate-section" style="background-image: url(&quot;/images/banners/1.13_technically_updated_java.jpg&quot;);">
+		<section class="donate-section" style="background-image: url(&quot;../assets/images/banners/1.13_technically_updated_java.jpg&quot;);">
 			<h2>捐赠</h2>
             <p>我们只接受无条件捐赠！</p>
 		</section>
@@ -10,7 +10,7 @@
                 <div class="br"></div>
                 <h1>!!我要恰饭!!</h1>
                 <h2>仅接受无条件捐赠</h2>
-                <img src="/images/docs/donate.png" alt="donateImg"/>
+                <img src="../../../assets/images/docs/donate.png" alt="donateImg"/>
 			</article>
         </main>
     </div>
@@ -24,7 +24,7 @@
   height: 100%;
 
   .donate-section {
-    background: rgb(54, 54, 54) url(../../assets/images/banners/original_image.jpg);
+    background: rgb(54, 54, 54) url(../../assets../assets/images/banners/original_image.jpg);
     background-color: #00000069;
     background-blend-mode: multiply;
     background-size: cover;
