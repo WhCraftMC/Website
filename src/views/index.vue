@@ -1,6 +1,6 @@
 <template>
 	<main class="main-section">
-    <img src="@/assets../assets/images/logos/noicon.logo.png" alt="logo" class="logo">
+    <img src="@/assets/images/logos/noicon.logo.png" alt="logo" class="logo">
 		<h2>Minecraft 小型群组服</h2>
 		<div class="arrow-scroll" @click="scroolDown">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width="16pt" height="16pt" class="arrow-down" style="isolation: isolate;">
@@ -38,7 +38,7 @@
               <font color="#484a46"><p id="poem-author" style="font-weight: bold"></p></font>
           </div>
           <div class="col-2">
-            <img src="../assets/images/misc/about-image.png" class="about-img"/>
+            <img src="/images/misc/about-image.png" class="about-img"/>
           </div>
       </div>
       </div>
@@ -149,7 +149,7 @@
 
       <div class="row">
         <div class="card">
-          <img src="../assets/images/misc/s-s-1.png" class="img"/>
+          <img src="@/assets/images/misc/s-s-1.png" class="img"/>
           <div class="text">
             <h2>类原版生存</h2>
             <p>类原版高版本生存服务器，保留原汁原味玩法，享受养老生活。</p>
@@ -159,7 +159,7 @@
         </div>
 
         <div class="card">
-          <img src="../assets/images/misc/s-b-1.png" class="img"/>
+          <img src="@/assets/images/misc/s-b-1.png" class="img"/>
           <div class="text">
             <h2>空岛生存</h2>
             <p>经典空岛生存服务器，保留原汁原味空岛玩法。</p>
@@ -169,7 +169,7 @@
         </div>
 
         <div class="card">
-          <img src="../assets/images/misc/s-w-0.png" class="img"/>
+          <img src="@/assets/images/misc/s-w-0.png" class="img"/>
           <div class="text">
             <h2>？？？</h2>
             <p>没想好做什么。</p>
