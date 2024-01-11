@@ -1,6 +1,6 @@
 <template>
 	<div class="donate">
-		<section class="donate-section" style="background-image: url(&quot;../assets/images/banners/1.13_technically_updated_java.jpg&quot;);">
+		<section class="donate-section" style="background-image: url(&quot;/images/banners/1.13_technically_updated_java.jpg&quot;);">
 			<h2>捐赠</h2>
             <p>我们只接受无条件捐赠！</p>
 		</section>
