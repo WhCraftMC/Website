@@ -38,7 +38,7 @@
               <font color="#484a46"><p id="poem-author" style="font-weight: bold"></p></font>
           </div>
           <div class="col-2">
-            <img src="../assets/images/about-image.png" class="about-img"/>
+            <img src="@/assets/images/misc/about-image.png" class="about-img"/>
           </div>
       </div>
       </div>
