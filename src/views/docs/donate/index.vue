@@ -10,7 +10,7 @@
                 <div class="br"></div>
                 <h1>!!我要恰饭!!</h1>
                 <h2>仅接受无条件捐赠</h2>
-                <img src="../../../assets/images/docs/donate.png" alt="donateImg"/>
+                <img src="/images/docs/donate.png" alt="donateImg"/>
 			</article>
         </main>
     </div>

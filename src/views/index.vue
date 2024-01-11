@@ -38,7 +38,7 @@
               <font color="#484a46"><p id="poem-author" style="font-weight: bold"></p></font>
           </div>
           <div class="col-2">
-            <img src="../assets/images/about-image.png" class="about-img"/>
+            <img src="/images/misc/about-image.png" class="about-img"/>
           </div>
       </div>
       </div>
@@ -149,9 +149,9 @@
 
       <div class="row">
         <div class="card">
-          <img src="https://www.wybserver.link/static/picture/a4VLNR.jpg" class="img"/>
+          <img src="/images/misc/s-s-1.png" class="img"/>
           <div class="text">
-            <h2>数据包生存</h2>
+            <h2>类原版生存</h2>
             <p>类原版高版本生存服务器，保留原汁原味玩法，享受养老生活。</p>
             <br><br>
             <button class="button-text" disabled>查看状态</button>
@@ -159,7 +159,7 @@
         </div>
 
         <div class="card">
-          <img src="https://www.wybserver.link/static/picture/a4VLNR.jpg" class="img"/>
+          <img src="/images/misc/s-b-1.png" class="img"/>
           <div class="text">
             <h2>空岛生存</h2>
             <p>经典空岛生存服务器，保留原汁原味空岛玩法。</p>
@@ -169,7 +169,7 @@
         </div>
 
         <div class="card">
-          <img src="https://www.wybserver.link/static/picture/a4VLNR.jpg" class="img"/>
+          <img src="/images/misc/s-w-0.png" class="img"/>
           <div class="text">
             <h2>？？？</h2>
             <p>没想好做什么。</p>
@@ -401,7 +401,8 @@ function scroolDown() {
       padding-left: 15%;
 
       .col-1 {
-        padding-right: 15px;
+        padding-right: 20px;
+        padding-bottom: 15px;
 
         h2 {
           margin-bottom: 1.375rem;
