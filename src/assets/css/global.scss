@@ -1,5 +1,4 @@
 /* 引入字体和图标库 */
-@import url("https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 @import url("https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css");
 @import url("./fonts/index.scss");
 @import url("https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/css/mdui.min.css");
@@ -24,7 +23,6 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: var(--body-background-color);
-  
   font-family: "HarmonyOS_Regular", sans-serif;
 }
 
