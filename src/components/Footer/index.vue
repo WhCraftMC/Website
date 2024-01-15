@@ -2,7 +2,7 @@
     <footer class="footer mcui-blackground-wool-dark">
 	    <div>
 		    <p class="copyright">Copyright&nbsp;&copy;&nbsp;{{ year }}&nbsp;-&nbsp;{{ new Date().getFullYear() }}&nbsp;{{ copym }}</p>
-        <a v-if="ICP" class="icp" :href="ICPURL">{{ ICP }}</a>
+        <a v-if="ICP" class="icp" :href="ICPURL" target="_blank">{{ ICP }}</a>
 	    </div>
     </footer>
 </template>
