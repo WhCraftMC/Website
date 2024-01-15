@@ -152,9 +152,9 @@
           <img src="@/assets/images/misc/s-s-1.png" class="img"/>
           <div class="text">
             <h2>插件生存</h2>
-            <p>类原版高版本生存服务器，保留原汁原味玩法，享受养老生活。</p>
+            <p>类原版的高版本生存服务器，保留原汁原味玩法，增加了新的玩法<span style="text-decoration: line-through;">(有点废肝)</span>，享受养老生活。</p>
             <br><br>
-            <button class="button-text" disabled>查看状态</button>
+            <button class="button-text btn" disabled>查看状态</button>
           </div>
         </div>
 
@@ -162,9 +162,9 @@
           <img src="@/assets/images/misc/s-b-1.png" class="img"/>
           <div class="text">
             <h2>空岛生存</h2>
-            <p>经典空岛生存服务器，保留原汁原味空岛玩法。</p>
+            <p>经典空岛生存服务器，保留原汁原味空岛玩法。<span style="text-decoration:line-through;">(也可以叫上基友解锁多人运动)</span></p>
             <br><br>
-            <button class="button-text" disabled>正在开发</button>
+            <button class="button-text btn" disabled>正在开发</button>
           </div>
         </div>
 
@@ -174,7 +174,7 @@
             <h2>？？？</h2>
             <p>没想好做什么。</p>
             <br><br>
-            <button class="button-text" disabled>未开服</button>
+            <button class="button-text btn" disabled>未开服</button>
           </div>
         </div>
       </div>
@@ -458,6 +458,7 @@ function scroolDown() {
       vertical-align: top;
 
       margin: 5px;
+      margin-bottom: 20px;
 
       border-radius: 0.375rem;
 
@@ -472,6 +473,7 @@ function scroolDown() {
         max-width: 100%;
         height: auto;
       }
+
       .text {
         display: flex;
         flex-direction: column;
