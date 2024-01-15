@@ -154,7 +154,7 @@
             <h2>插件生存</h2>
             <p>类原版的高版本生存服务器，保留原汁原味玩法，增加了新的玩法<span style="text-decoration: line-through;">(有点废肝)</span>，享受养老生活。</p>
             <br><br>
-            <button class="button-text btn" disabled>查看状态</button>
+            <button class="button-text btn" @click="open('https://status.whcraft.top')" target="_blank">查看状态</button>
           </div>
         </div>
 
@@ -164,7 +164,7 @@
             <h2>空岛生存</h2>
             <p>经典空岛生存服务器，保留原汁原味空岛玩法。<span style="text-decoration:line-through;">(也可以叫上基友解锁多人运动)</span></p>
             <br><br>
-            <button class="button-text btn" disabled>正在开发</button>
+            <button class="button-text btn" disabled target="_blank">正在开发</button>
           </div>
         </div>
 
@@ -174,7 +174,7 @@
             <h2>？？？</h2>
             <p>没想好做什么。</p>
             <br><br>
-            <button class="button-text btn" disabled>未开服</button>
+            <button class="button-text btn" disabled target="_blank">未开服</button>
           </div>
         </div>
       </div>
@@ -187,6 +187,10 @@
 <script setup lang="ts">
 function scroolDown() {
   window.scrollTo(0, window.innerHeight);
+}
+
+function open(url: string) {
+  window.open(url);
 }
 </script>
 
