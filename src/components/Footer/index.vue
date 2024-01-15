@@ -2,7 +2,7 @@
     <footer class="footer mcui-blackground-wool-dark">
 	    <div>
 		    <p class="copyright">Copyright&nbsp;&copy;&nbsp;{{ year }}&nbsp;-&nbsp;{{ new Date().getFullYear() }}&nbsp;{{ copym }}</p>
-        <a v-if="ICP" class="icp" href="https://beian.miit.gov.cn">{{ ICP }}</a>
+        <a v-if="ICP" class="icp" :href="ICPURL">{{ ICP }}</a>
 	    </div>
     </footer>
 </template>
@@ -13,6 +13,7 @@ import { ref } from 'vue';
 const year = ref(import.meta.env.VITE_FT_STARTYEAR);
 const ICP = ref(import.meta.env.VITE_FT_ICP);
 const copym = ref(import.meta.env.VITE_FT_COPYRIGHT);
+const ICPURL = ref(import.meta.env.VITE_FT_ICPURL);
 </script>
 
 <style scoped lang="scss">
@@ -47,20 +48,12 @@ const copym = ref(import.meta.env.VITE_FT_COPYRIGHT);
     color: hsl(0, 0%, 60%);
     font-size: 1rem;
     text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   .icp {
     color: hsl(0, 0%, 60%);
     font-size: 1rem;
     text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 </style>

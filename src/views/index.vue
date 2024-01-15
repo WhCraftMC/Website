@@ -148,7 +148,7 @@
       <br><br>
 
       <div class="row">
-        <div class="card">
+        <div class="card mcui-background-wool-light">
           <img src="@/assets/images/misc/s-s-1.png" class="img"/>
           <div class="text">
             <h2>插件生存</h2>
@@ -158,7 +158,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mcui-background-wool-light">
           <img src="@/assets/images/misc/s-b-1.png" class="img"/>
           <div class="text">
             <h2>空岛生存</h2>
@@ -168,7 +168,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mcui-background-wool-light">
           <img src="@/assets/images/misc/s-w-0.png" class="img"/>
           <div class="text">
             <h2>？？？</h2>
@@ -458,7 +458,6 @@ function scroolDown() {
       vertical-align: top;
 
       margin: 5px;
-      background-image: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/bg-wool-light.png);
 
       border-radius: 0.375rem;
 
