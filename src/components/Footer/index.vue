@@ -31,6 +31,7 @@ const ICPURL = ref(import.meta.env.VITE_FT_ICPURL);
   .icp {
     font-size: 1rem;
     text-decoration: none;
+    color: var(--main-text-color);
   }
 }
 </style>
