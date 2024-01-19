@@ -21,15 +21,14 @@ const ICPURL = ref(import.meta.env.VITE_FT_ICPURL);
   width: 100%;
   padding: 1.6rem 0 2.1rem 0;
   text-align: center;
+  color: var(--main-text-color);
 
   .copyright {
-    color: hsl(0, 0%, 60%);
     font-size: 1rem;
     text-decoration: none;
   }
 
   .icp {
-    color: hsl(0, 0%, 60%);
     font-size: 1rem;
     text-decoration: none;
   }
