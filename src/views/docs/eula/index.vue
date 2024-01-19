@@ -153,6 +153,10 @@
         font-size: 0.2rem;
       }
 
+      li {
+        margin: 0;
+      }
+
       a {
         color: white;
         font-size: 1rem;
