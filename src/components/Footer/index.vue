@@ -22,28 +22,6 @@ const ICPURL = ref(import.meta.env.VITE_FT_ICPURL);
   padding: 1.6rem 0 2.1rem 0;
   text-align: center;
 
-  hr {
-    margin: 1rem 0 0 0;
-  }
-
-  nav {
-    width: 100%;
-    display: flex;
-    padding: 1rem 0 0 0;
-    place-content: center;
-    place-items: center;
-  }
-
-  ul {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    place-content: center;
-    place-items: center;
-  }
   .copyright {
     color: hsl(0, 0%, 60%);
     font-size: 1rem;
