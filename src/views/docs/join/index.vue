@@ -22,7 +22,7 @@
           <h2>添加服务器</h2>
           <p>参考以下视频，由于一些原因，服主无法使用官网地址访问服务器，实际效果参考下图。</p>
           <video controls>
-            <source src="videos/play-java.mp4" type="video/mp4" alt="Java/PC版推荐服务器方法">
+            <source src="https://server.whcraft.top:9403/uploads/1706187418111-Maxwell%20Cat.mp4" type="video/mp4" alt="Java/PC版推荐服务器方法">
             您的浏览器不支持 video 属性。
           </video>
 
@@ -31,7 +31,7 @@
           <h2>添加服务器</h2>
           <p>参考以下视频，由于一些原因，服主无法使用官网地址访问服务器，实际效果参考下图。</p>
           <video controls>
-            <source src="videos/play-bedrock.mp4" type="video/mp4" alt="基岩版添加服务器方法">
+            <source src="https://server.whcraft.top:9403/uploads/1706187418111-Maxwell%20Cat.mp4" type="video/mp4" alt="基岩版添加服务器方法">
             您的浏览器不支持 video 属性。
           </video>
 			</article>
