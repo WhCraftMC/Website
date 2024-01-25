@@ -21,7 +21,7 @@
           <p>你可以使用任意启动器启动国际Java，如PCL、HCML、BakaXL等，本篇使用HCML作为举例。</p>
           <h2>添加服务器</h2>
           <p>参考以下视频，由于一些原因，服主无法使用官网地址访问服务器，实际效果参考下图。</p>
-          <video controls autoplay>
+          <video controls>
             <source src="videos/play-java.mp4" type="video/mp4" alt="Java/PC版推荐服务器方法">
             您的浏览器不支持 video 属性。
           </video>
@@ -30,7 +30,7 @@
           手机端(即基岩)，可以直接加入服务器。
           <h2>添加服务器</h2>
           <p>参考以下视频，由于一些原因，服主无法使用官网地址访问服务器，实际效果参考下图。</p>
-          <video controls autoplay>
+          <video controls>
             <source src="videos/play-bedrock.mp4" type="video/mp4" alt="基岩版添加服务器方法">
             您的浏览器不支持 video 属性。
           </video>
