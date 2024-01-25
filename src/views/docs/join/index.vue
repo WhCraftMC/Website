@@ -22,23 +22,18 @@
           <h2>添加服务器</h2>
           <p>参考以下视频，由于一些原因，服主无法使用官网地址访问服务器，实际效果参考下图。</p>
           <video controls autoplay>
-            <source src="videos/play-java.mp4" type="video/mp4">
+            <source src="videos/play-java.mp4" type="video/mp4" alt="Java/PC版推荐服务器方法">
             您的浏览器不支持 video 属性。
           </video>
 
           <h1>手机端</h1>
           手机端(即基岩)，可以直接加入服务器。
           <h2>添加服务器</h2>
-          <p>点击 "游戏"</p>
-          <img src="@/assets/images/docs/000-how_join/002-add_000.png" alt="点击游戏"/>
-          <p>点击 "服务器" 然后滑动到最底部点击 "添加服务器"</p>
-          <img src="@/assets/images/docs/000-how_join/002-add_004.png" alt="点击服务器"/>
-          <p>在 "服务器名称" 栏填入你想要填入的服务器名称，在 "服务器地址" 栏填入服务器IP，在 "端口" 栏修改端口，可<router-link to="docs/getserverip" class="boldfonts">在此</router-link>获取服务器IP。</p>
-          <img src="@/assets/images/docs/000-how_join/002-add_001.png" alt="填入服务器信息"/>
-          <p>点击 "保存" 或 "游戏"</p>
-          <img src="@/assets/images/docs/000-how_join/002-add_002.png" alt="点击保存"/>
-          <p>点击服务器， 点击 "加入服务器"</p>
-          <img src="@/assets/images/docs/000-how_join/002-add_003.png" alt="点击游戏"/>
+          <p>参考以下视频，由于一些原因，服主无法使用官网地址访问服务器，实际效果参考下图。</p>
+          <video controls autoplay>
+            <source src="videos/play-bedrock.mp4" type="video/mp4" alt="基岩版添加服务器方法">
+            您的浏览器不支持 video 属性。
+          </video>
 			</article>
 		</main>
 	</div>
