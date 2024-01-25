@@ -1,30 +1,32 @@
 <template>
-	<div class="donate">
+	<div class="friendURL">
 		<section>
-			<h2>捐赠</h2>
-      <p>仅接受无条件捐赠</p>
+			<h2>友情链接</h2>
+            <p>本站的友情链接</p>
 		</section>
 
 		<main>
 			<article class="container">
-        <div class="br"></div>
-        <h1>!!我要恰饭!!</h1>
-        <h2>仅接受无条件捐赠</h2>
-        <img src="../friendURL/images/docs/donate.png" alt="donateImg"/>
+                <div>
+                    <h1>机械世纪</h1>
+                    <p></p>
+                    <a class="button-text btn" style="text-decoration: none;" href="https://www.wybserver.link" target="_blank">点击访问</a>
+                </div>
 			</article>
-        </main>
-    </div>
+		</main>
+	</div>
+
 </template>
 
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
-.donate {
+.friendURL {
   background: #323232;
   height: 100%;
 
   section {
-    background: rgb(54, 54, 54) url(friendURL/images/banners/1.13_technically_updated_java.jpg);
+    background: rgb(54, 54, 54) url(/images/banners/other_early_console_era.jpg);
     background-color: #00000069;
     background-blend-mode: multiply;
     background-size: cover;
@@ -39,7 +41,6 @@
     height: 250px;
 
     h2 {
-      font-family: 'MinecraftFiveBold';
       color: white;
       font-size: 1.9rem;
       text-shadow: 0 4px 0 rgb(48, 48, 48);

@@ -56,6 +56,14 @@ const mainRoute: Array<RouteRecordRaw> = [
           title: '我要恰饭'
         },
         component: () => import('@/views/docs/donate/index.vue')
+      },
+      {
+        path: '/docs/friend',
+        name: 'friend',
+        meta: {
+          title: '友情链接'
+        },
+        component: () => import('@/views/docs/friendUrl/index.vue')
       }
 ];
 

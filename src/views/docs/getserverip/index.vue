@@ -1,6 +1,6 @@
 <template>
 	<div class="getsip">
-		<section class="getsip-section" style="background-image: url(&quot;/images/banners/other_early_console_era.jpg&quot;);">
+		<section>
 			<h2>服务器IP&要求</h2>
       <p>本章讲述了服务器对客户端的要求。</p>
 		</section>
@@ -8,21 +8,25 @@
 		<main>
 			<article class="container">
 				<h1>获取服务器IP</h1>
-        <p>在这里获取服务器最新IP，可以点击地址复制。</p>
-        <h2>Java</h2>
-        <p>IP地址: <spawn @click="copyUrl(jip);">{{ `${jip}` }}</spawn></p>
+          <p>在这里获取服务器最新IP，可以点击地址复制。</p>
+          <h2>Java</h2>
+            <p>IP地址: <spawn @click="copyUrl(jip);">{{ `${jip}` }}</spawn></p>
+            <br>
 
-        <h2>基岩</h2>
-        <p>IP地址: <spawn @click="copyUrl(bip);">{{ bip }}</spawn></p>
-        <p>端口: <spawn @click="copyUrl(bpr);">{{ bpr }}</spawn></p>
+          <h2>基岩</h2>
+            <p>IP地址: <spawn @click="copyUrl(bip);">{{ bip }}</spawn></p>
+            <p>端口: <spawn @click="copyUrl(bpr);">{{ bpr }}</spawn></p>
+            <br>
 
         <h1>对客户端要求</h1>
-        <p>在这里获取对客户端版本的要求</p>
-        <h2>Java</h2>
-        <p>版本要求: 1.8-1.20.2任意版本</p>
-        <p>不支持安装非仅客户端Mod的客户端进入插件/原版生存服。</p>
-        <h2>基岩</h2>
-        <p>版本要求: 1.20.xx.xx</p>
+          <p>在这里获取对客户端版本的要求</p>
+          <br>
+          <h2>Java</h2>
+            <p>版本要求: 1.8-1.20.2任意版本</p>
+            <p>不支持安装非仅客户端Mod的客户端进入插件/原版生存服。</p>
+            <br>
+          <h2>基岩</h2>
+            <p>版本要求: 1.20.xx.xx</p>
 			</article>
 		</main>
 	</div>
@@ -46,7 +50,7 @@ function copyUrl(val: string) {
   height: 100%;
 
   .getsip-section {
-    background: rgb(54, 54, 54) url(../../assets/images/banners/other_early_console_era.jpg);
+    background: rgb(54, 54, 54) url(friendURL/images/banners/other_early_console_era.jpg);
     background-color: #00000069;
     background-blend-mode: multiply;
     background-size: cover;
@@ -95,6 +99,40 @@ function copyUrl(val: string) {
       align-items: flex-start;
       width: 75%;
 
+      h1 {
+        margin: 0;
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.4rem;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 1.0rem;
+      }
+
+      h5 {
+        margin: 0;
+        font-size: 0.6rem;
+      }
+
+      h6 {
+        margin: 0;
+        font-size: 0.2rem;
+      }
+
+      li {
+        margin: 0;
+      }
+
       a {
         color: white;
         font-size: 1rem;
@@ -115,30 +153,6 @@ function copyUrl(val: string) {
   hr {
     border-color: rgb(146, 146, 146);
     margin: 0.4rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .join main .container img {
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .join main .container img {
-    width: 90%;
-  }
-}
-
-@media (min-width: 992px) {
-  .join main .container img {
-    width: 75%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .join main .container img {
-    width: 55%;
   }
 }
 </style>

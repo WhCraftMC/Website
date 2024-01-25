@@ -1,12 +1,14 @@
 <template>
 	<div class="join">
-		<section class="join-section" style="background-image: url(&quot;/images/banners/original_image.jpg&quot;);">
+		<section>
 			<h2>如何加入服务器</h2>
       <p>本章讲述了如何游玩服务器。</p>
 		</section>
 
 		<main>
 			<article class="container">
+        <h1>注意</h1>
+        <p>游玩本服务器要求您阅读并了解了<a href="" target="_blank">我们的Eula</a></p>
 				<h1>开始之前</h1>
           <p>本章节需要你有一定的电脑/手机基础，并且对其有完全的控制权。</p>
           <p>请准备：</p>
@@ -14,22 +16,15 @@
           <li>可用且通畅的网络。</li>
           <li>对于电脑端: 一个可用的启动器。</li>
           <li>对于手机端: 一个可用的符合 <router-link to="/docs/getserverip">要求</router-link> 的客户端。</li>
+          <br>
           <h1>电脑端</h1>
           <p>你可以使用任意启动器启动国际Java，如PCL、HCML、BakaXL等，本篇使用HCML作为举例。</p>
-          <h2>启动你的游戏</h2>
-          <p>点击 "启动游戏" 后等待游戏启动</p>
-          <img src="@/assets/images/docs/000-how_join/001-start_game.png" alt="启动游戏"/>
           <h2>添加服务器</h2>
-          <p>进入游戏后点击 "多人游戏"</p>
-          <img src="@/assets/images/docs/000-how_join/001-join_add000.png" alt="点击多人游戏"/>
-          <p>点击 "添加服务器"</p>
-          <img src="@/assets/images/docs/000-how_join/001-join_add001.png" alt="点击添加服务器"/>
-          <p>在 "服务器地址" 栏填入服务器IP,可<router-link to="/docs/getserverip" class="boldfonts">在此</router-link>获取服务器IP。</p>
-          <img src="@/assets/images/docs/000-how_join/001-join_add002.png" alt="填入服务器地址"/>
-          <p>点击 "完成" 保存配置。</p>
-          <img src="@/assets/images/docs/000-how_join/001-join_add003.png" alt="点击保存配置"/>
-          <p>点击 "服务器图标" 两次进入服务器。</p>
-          <img src="@/assets/images/docs/000-how_join/001-join_add004.png" alt="加入服务器"/>
+          <p>参考以下视频，由于一些原因，服主无法使用官网地址访问服务器，实际效果参考下图。</p>
+          <video controls autoplay>
+            <source src="videos/play-java.mp4" type="video/mp4">
+            您的浏览器不支持 video 属性。
+          </video>
 
           <h1>手机端</h1>
           手机端(即基岩)，可以直接加入服务器。
@@ -56,8 +51,8 @@
   background: #323232;
   height: 100%;
 
-  .join-section {
-    background: rgb(54, 54, 54) url(../../assets@/assets/images/banners/original_image.jpg);
+  .section {
+    background: rgb(54, 54, 54) url(friendURL/images/banners/original_image.jpg);
     background-color: #00000069;
     background-blend-mode: multiply;
     background-size: cover;
@@ -107,6 +102,40 @@
       align-items: flex-start;
       width: 75%;
 
+      h1 {
+        margin: 0;
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.4rem;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 1.0rem;
+      }
+
+      h5 {
+        margin: 0;
+        font-size: 0.6rem;
+      }
+
+      h6 {
+        margin: 0;
+        font-size: 0.2rem;
+      }
+
+      li {
+        margin: 0;
+      }
+
       a {
         color: white;
         font-size: 1rem;
@@ -127,30 +156,6 @@
   hr {
     border-color: rgb(146, 146, 146);
     margin: 0.4rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .join main .container img {
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .join main .container img {
-    width: 90%;
-  }
-}
-
-@media (min-width: 992px) {
-  .join main .container img {
-    width: 75%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .join main .container img {
-    width: 55%;
   }
 }
 </style>
