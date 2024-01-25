@@ -50,7 +50,7 @@ function copyUrl(val: string) {
   height: 100%;
 
   .getsip-section {
-    background: rgb(54, 54, 54) url(friendURL/images/banners/other_early_console_era.jpg);
+    background: rgb(54, 54, 54) url(/images/banners/other_early_console_era.jpg);
     background-color: #00000069;
     background-blend-mode: multiply;
     background-size: cover;

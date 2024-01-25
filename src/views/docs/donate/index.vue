@@ -10,7 +10,7 @@
         <div class="br"></div>
         <h1>!!我要恰饭!!</h1>
         <h2>仅接受无条件捐赠</h2>
-        <img src="../friendURL/images/docs/donate.png" alt="donateImg"/>
+        <img src="../../../assets/images/docs/donate.png" alt="donateImg"/>
 			</article>
         </main>
     </div>
@@ -24,7 +24,7 @@
   height: 100%;
 
   section {
-    background: rgb(54, 54, 54) url(friendURL/images/banners/1.13_technically_updated_java.jpg);
+    background: rgb(54, 54, 54) url(/images/banners/1.13_technically_updated_java.jpg);
     background-color: #00000069;
     background-blend-mode: multiply;
     background-size: cover;

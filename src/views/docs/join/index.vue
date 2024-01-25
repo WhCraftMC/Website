@@ -46,8 +46,8 @@
   background: #323232;
   height: 100%;
 
-  .section {
-    background: rgb(54, 54, 54) url(friendURL/images/banners/original_image.jpg);
+  section {
+    background: rgb(54, 54, 54) url(/images/banners/original_image.jpg);
     background-color: #00000069;
     background-blend-mode: multiply;
     background-size: cover;
