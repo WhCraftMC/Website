@@ -1,0 +1,44 @@
+/* 引入字体和图标库 */
+@import url("https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css");
+/*@import url("./fonts/index.scss");*/
+@import url("https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/css/mdui.min.css");
+
+/* 变量 */
+:root {
+  --body-background-color: #333333;
+  --main-text-color: #f9f9f9;
+  --dark-text-color: #252525;
+}
+
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  scrollbar-color: #474747 #292929;
+  max-width: 100vw;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-background-color);
+  font-family: "HarmonyOS_Regular", sans-serif;
+}
+
+::-webkit-scrollbar {
+  background: #292929;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #474747;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #505050;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #838383;
+}

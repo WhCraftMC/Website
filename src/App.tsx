@@ -1,9 +1,10 @@
+import React from 'react';
+
 function App() {
-    return {
-        <div style={{ color:"blue" }}>
-            <h1>hello!</h1>
-        </div>
-    }
+  return (
+    <div className="App">
+    </div>
+  );
 }
 
 export default App;
