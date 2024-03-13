@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '@/assets/css/global.scss';
-import { RouteObject, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { BrowserRouter, RouteObject, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import route from './routes/index';
+import NavBar from './components/NavBar/NavBar';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,6 +17,9 @@ const router = createBrowserRouter(routes);
 
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
+      <NavBar/>
+    </BrowserRouter>
     <RouterProvider router={router} />
   </React.StrictMode>
 );

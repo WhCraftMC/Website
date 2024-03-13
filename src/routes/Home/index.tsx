@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.scss';
 
 function index() {
   document.title = "Minecraft 小型群组服 首页";
