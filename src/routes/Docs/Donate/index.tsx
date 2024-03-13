@@ -2,6 +2,8 @@ import './index.scss';
 import donateImg from './../../../assets/images/docs/donate.png'
 
 function index() {
+  document.title = "我要恰饭 | WhCraft";
+
   return (
     <div className="donate">
 		<section>

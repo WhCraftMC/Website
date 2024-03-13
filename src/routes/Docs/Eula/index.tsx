@@ -1,6 +1,8 @@
 import './index.scss';
 
 function index() {
+  document.title = "玩家守则 | WhCraft";
+
   return (
     <div className="eula">
 		<section>

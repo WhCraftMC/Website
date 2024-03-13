@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 
 function index() {
+  document.title = "如何加入 | WhCraft";
+
   return (
     <div className="join">
 		<section>

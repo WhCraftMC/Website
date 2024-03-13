@@ -4,6 +4,7 @@ import ButtonText from "../../components/Button";
 
 function ErrorPage() {
   const error: any = useRouteError();
+  document.title = "页面异常 | WhCraft";
 
   return (
     <div className="NotFound-container">

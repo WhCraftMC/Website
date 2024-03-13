@@ -1,4 +1,5 @@
 /// <reference types="react-scripts" />
+/// <reference types="mdui/jsx.zh-cn.d.ts" />
 /// <reference types="node" />
 /// <reference types="react" />
 /// <reference types="react-dom" />

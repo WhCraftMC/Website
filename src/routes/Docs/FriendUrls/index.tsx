@@ -2,6 +2,8 @@ import './index.scss';
 import ButtonText from "../../../components/Button";
 
 function index() {
+  document.title = "友情链接 | WhCraft";
+
   return (
     <div className="friends">
 		<section>

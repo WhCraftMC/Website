@@ -5,10 +5,15 @@ import { BrowserRouter, RouteObject, RouterProvider, createBrowserRouter } from 
 import route from './routes/index';
 import docsroute from './routes/Docs/index';
 import NavBar from './components/NavBar/NavBar';
+import FooterBar from './components/Footer/FooterBar'
+import 'mdui/mdui.css';
+import 'mdui';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+document.title = "无标题 | WhCraft";
 
 const routes : Array<RouteObject> = [
   ...route,
@@ -23,5 +28,8 @@ root.render(
       <NavBar/>
     </BrowserRouter>
     <RouterProvider router={router} />
+    <BrowserRouter>
+      <FooterBar/>
+    </BrowserRouter>
   </React.StrictMode>
 );
