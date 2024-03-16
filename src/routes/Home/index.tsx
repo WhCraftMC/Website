@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.scss';
-import './../../assets/css/mcui/all.scss'
 
 import 'mdui/mdui.css';
 

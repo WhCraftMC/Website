@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '@/assets/css/global.scss';
+import '@/assets/css/mcui/all.scss'
 import { BrowserRouter, RouteObject, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import route from './routes/index';
 import docsroute from './routes/Docs/index';
