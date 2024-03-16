@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="container">
-        <Link to="/" className="nav-logo" onClick={() => window.scroll(0, 0)}>
+        <Link to="/" className="nav-logo" reloadDocument>
           <img src={logo} alt="logo"/>
           WhCraft
         </Link>

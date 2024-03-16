@@ -1,18 +1,24 @@
 import React from 'react';
-import './index.scss';
+import { Link } from 'react-router-dom';
 
+import './index.scss';
 import 'mdui/mdui.css';
 
+import { ReactComponent as Arrow } from "../../assets/images/icons/blunt-arrow-down.svg";
 import ss1 from './../../assets/images/misc/s-s-1.png'
 import sb1 from './../../assets/images/misc/s-b-1.png'
 import sw0 from './../../assets/images/misc/s-w-0.png'
 import NCLogo from './../../assets/images/logos/noicon.logo.png';
 import AboutImg from './../..//assets/images/misc/about-image.png'
-import { Link } from 'react-router-dom';
+
 import ButtonText from '../../components/Button';
 
 function index() {
   document.title = "官方网站 | WhCraft";
+
+  const handleScrollDown = () => {
+    window.scroll(0, window.innerHeight);
+  };
 
   return (
     <div>
@@ -20,7 +26,7 @@ function index() {
         <img src={NCLogo} alt="logo" className="logo"/>
         <h2>Minecraft 小型群组服</h2>
         <div className="arrow-scroll">
-          
+          <Arrow className="arrow-down" onClick={handleScrollDown} />
         </div>
       </main>
 

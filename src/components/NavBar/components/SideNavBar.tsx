@@ -29,13 +29,13 @@ const SideNavbar: FC<ISideNavbar> = ({ isOpen, onClose, closeNav }) => {
         <nav>
         <h1><i className="mdui-icon material-icons"></i>&nbsp;站内链接</h1>
             <li>
-              <Link to="/" className="linkto">
+              <Link to="/" className="linkto" reloadDocument>
                 <i className="mdui-icon material-icons"></i>
                 &nbsp;首页
               </Link>
             </li>
             <li>
-              <Link to="/punish" className="linkto">
+              <Link to="/punish" className="linkto" reloadDocument>
                 <i className="mdui-icon material-icons"></i>
                 &nbsp;处罚
               </Link>
@@ -51,13 +51,13 @@ const SideNavbar: FC<ISideNavbar> = ({ isOpen, onClose, closeNav }) => {
               &nbsp;&nbsp;文档
             </h2>
             <li>
-              <Link to="/docs/about" className="linkto">
+              <Link to="/docs/about" className="linkto" reloadDocument>
                 <i className="mdui-icon material-icons"></i>
                 &nbsp;关于
               </Link>
             </li>
             <li>
-              <Link to="/docs/join" className="linkto">
+              <Link to="/docs/join" className="linkto" reloadDocument>
                 <i className="mdui-icon material-icons"></i>
                 &nbsp;如何加入服务器
               </Link>
@@ -67,7 +67,7 @@ const SideNavbar: FC<ISideNavbar> = ({ isOpen, onClose, closeNav }) => {
               &nbsp;&nbsp;其他
             </h2>
             <li>
-              <Link to="/docs/donate" className="linkto">
+              <Link to="/docs/donate" className="linkto" reloadDocument>
                 <i className="mdui-icon material-icons"></i>
                 &nbsp;捐赠
               </Link>
