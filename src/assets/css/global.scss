@@ -24,6 +24,7 @@ html, body {
   height: 100%;
   background-color: var(--body-background-color);
   font-family: "HarmonyOS_Regular", sans-serif;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
