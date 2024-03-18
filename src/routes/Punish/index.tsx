@@ -43,12 +43,14 @@ function Index() {
 
       <main>
         <div className="container">
-          <div className="buttons">
-            <ButtonText to="/punish?page=bans" className="child">封禁列表</ButtonText>
-            <ButtonText to="/punish?page=warns" className="child">警告列表</ButtonText>
-            <ButtonText to="/punish?page=mutes" className="child">禁言列表</ButtonText>
-          </div>
           <br/>
+          {id === null && (
+            <div className="buttons">
+              <ButtonText to="/punish?page=bans" className="child">封禁列表</ButtonText>
+              <ButtonText to="/punish?page=warns" className="child">警告列表</ButtonText>
+              <ButtonText to="/punish?page=mutes" className="child">禁言列表</ButtonText>
+            </div>
+          )}
           {id !== null && id!==undefined && page !== undefined && (
             <>
               <Info page={page} id={id}/>
