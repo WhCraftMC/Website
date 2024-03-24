@@ -43,7 +43,7 @@ function DataTable(props: DataTableProps) {
   };
 
   return (
-    <div className={"table-container" + (!isLoading ? " mcui-blackground-wool-dark" : "")}>
+    <div className={"table-container" + (!isLoading && !(data.length === 0) ? " mcui-blackground-wool-dark" : "")}>
       <>
         {!isLoading ? (
           <>

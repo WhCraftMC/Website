@@ -35,7 +35,7 @@ function DataTable(props: DataProps) {
   return (
     <>
       <GoBack/>
-      <div className={"table-container"  + (!isLoading ? " mcui-blackground-wool-dark" : "")}>
+      <div className={"table-container"  + (!isLoading && !(data.length === 0) ? " mcui-blackground-wool-dark" : "")}>
         {props.id !== undefined && props.page !== undefined && (
           <>
             {!isLoading ? (
