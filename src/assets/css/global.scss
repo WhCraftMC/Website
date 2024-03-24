@@ -3,10 +3,14 @@
 @import url("./fonts/index.scss");
 @import url("https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/mdui/1.0.2/css/mdui.min.css");
 
+/* mdui */
+@import url("https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css");
+
 /* 变量 */
 :root {
   --body-background-color: #333333;
   --main-text-color: #f9f9f9;
+  --main-disabled-color: #aeaeae;
   --dark-text-color: #252525;
 }
 

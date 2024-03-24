@@ -1,36 +1,78 @@
 .table-container {
-    overflow-x: auto;
-    text-align: center;
-    text-wrap: nowrap;
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      border: 0.5px solid;
-      thead {
-        background: rgba(255, 255, 255, 0);
-        tr {
-          th {
-            border: 0.5px solid;
-            padding: 1rem;
-          }
+  overflow-x: auto;
+  text-align: center;
+  text-wrap: nowrap;
+
+  padding: 1.25%;
+  border-radius: 1%;
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 0.5px solid;
+    thead {
+      background: rgba(255, 255, 255, 0);
+      tr {
+        th {
+          border: 0.5px solid;
+          padding: 1rem;
         }
       }
-      tbody {
-        background: rgba(255, 255, 255, 0);
-        tr {
-          td {
-            border: 0.5px solid;
-            padding: 1rem;
-            width: 100%;
-            p {
-              color: white;
-              .faces {
-                width: 25px;
-                height: 25px;
-              }
+    }
+    tbody {
+      background: rgba(255, 255, 255, 0);
+      tr {
+        td {
+          border: 0.5px solid;
+          padding: 1rem;
+          width: 100%;
+          p {
+            color: white;
+            .faces {
+              width: 25px;
+              height: 25px;
             }
           }
         }
       }
     }
   }
+
+  .table_footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.75rem;
+    padding: 0 8px;
+    flex-direction: row-reverse;
+    padding-top: 1.25%;
+    color: var(--main-text-color);
+
+    .text {
+      margin: 0 32px 0 24px;
+      font-size: 0.75rem;
+      color: var(--main-text-color);
+    }
+
+    .btn_round {
+      height: 36px;
+      width: 36px;
+      font-size: 0.75rem;
+      border-radius: 100%;
+      background-color: transparent;
+      border-style: none;
+      color: var(--main-text-color);
+      align-items: center;
+      transition: background-color .3s linear, border .3s linear;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transition-duration: 0.3s;
+      }
+
+      &.disabled {
+        color: var(--main-disabled-color);
+      }
+    }
+  }
+}

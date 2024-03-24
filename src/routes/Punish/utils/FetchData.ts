@@ -3,6 +3,7 @@ import api from '../../../util/Api';
 
 interface Data {
   id: number;
+  name: string;
   uuid: string;
   ip: string;
   reason: string;
@@ -35,13 +36,11 @@ interface Data {
   };
 }
 
-interface UpdatedData extends Data {
-  name: string;
-}
-
-function useFetchData(page: string|undefined, id?: string|undefined): [UpdatedData[], boolean] {
-  const [data, setData] = useState<UpdatedData[]>([]);
+function useFetchData(page: string|undefined, pagenum?: number|undefined, id?: string|undefined): [Data[], boolean, number, number] {
+  const [data, setData] = useState<Data[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [totalCount, setTotalCount] = useState(0);
+  const [totalPages, setTotalPages] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -52,11 +51,13 @@ function useFetchData(page: string|undefined, id?: string|undefined): [UpdatedDa
           const names = nameResponses.map((response) => response.data.data[0].name);
           setData(response.data.data.map((item: Data, index: number) => ({ ...item, name: names[index] })));
           setIsLoading(false);
-        } else if (page!==undefined && page!==null) {
-          const response = await api.get(`/punish/${page}`);
-          const nameResponses = await Promise.all(response.data.data.map((item: Data) => api.get(`/punish/getname/${item.uuid}`)));
+        } else if (page!==undefined && page!==null && pagenum!==null && pagenum!==undefined) {
+          const response = await api.get(`/punish/${page}?page=${pagenum}`);
+          const nameResponses = await Promise.all(response.data.data.data.map((item: Data) => api.get(`/punish/getname/${item.uuid}`)));
           const names = nameResponses.map((response) => response.data.data[0].name);
-          setData(response.data.data.map((item: Data, index: number) => ({ ...item, name: names[index] })));
+          setTotalCount(response.data.data.totalCount);
+          setTotalPages(response.data.data.totalPages);
+          setData(response.data.data.data.map((item: Data, index: number) => ({ ...item, name: names[index] })));
           setIsLoading(false);
         } else {
           setIsLoading(false);
@@ -68,9 +69,9 @@ function useFetchData(page: string|undefined, id?: string|undefined): [UpdatedDa
     };
 
     fetchData();
-  }, [id, page]);
+  }, [id, page, pagenum]);
 
-  return [data, isLoading];
+  return [data, isLoading, totalCount, totalPages];
 }
 
 export default useFetchData;
