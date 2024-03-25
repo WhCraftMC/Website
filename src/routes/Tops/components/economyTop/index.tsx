@@ -10,7 +10,7 @@ function DataTable() {
   let [data, isLoading, isError, totalCount, totalPages] = useFetchData(pagenum);
 
   return (
-    <div className={"table-container" + (!isLoading && !(data.length === 0) ? " mcui-blackground-wool-dark" : "")}>
+    <div className={"table-container" + (!isLoading && !(data.length === 0) && !isError ? " mcui-blackground-wool-dark" : "")}>
       {!isError ? (
         <>
           {!isLoading ? (

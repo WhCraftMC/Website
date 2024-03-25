@@ -52,7 +52,7 @@ function DataTable(props: DataTableProps) {
           <ButtonText to="/punish?page=mutes" className="child">禁言列表</ButtonText>
         </div>
       )}
-      <div className={"table-container" + (!isLoading && !(data.length === 0) ? " mcui-blackground-wool-dark" : "")}>
+      <div className={"table-container" + (!isLoading && !(data.length === 0) && !isError ? " mcui-blackground-wool-dark" : "")}>
         {!isError ? (
           <>
           {!isLoading ? (
