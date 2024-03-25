@@ -4,7 +4,6 @@ import './index.scss';
 import List from './components/list/index';
 import Info from './components/info/index';
 
-import 'mdui/mdui.css';
 import { useLocation } from 'react-router-dom';
 import ButtonText from '../../components/Button';
 
@@ -38,7 +37,7 @@ function Index() {
     <div className="punish">
       <section className="punish-section">
         <h2>处罚列表</h2>
-          <p>你可以在这里找到所有的处罚信息</p>
+          <p>记仇的小本本</p>
       </section>
 
       <main>
