@@ -19,8 +19,8 @@ function Index() {
   updateTitle(page);
 
   return (
-    <div className="punish">
-      <section className="punish-section">
+    <div className="economy">
+      <section className="economy-section">
         <h2>数据排行榜</h2>
         <p>谁不想当第一呢?</p>
       </section>

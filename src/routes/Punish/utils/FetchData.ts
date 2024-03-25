@@ -36,9 +36,10 @@ interface Data {
   };
 }
 
-function useFetchData(page: string|undefined, pagenum?: number|undefined, id?: string|undefined): [Data[], boolean, number, number] {
+function useFetchData(page: string|undefined, pagenum?: number|undefined, id?: string|undefined): [Data[], boolean, boolean, number, number] {
   const [data, setData] = useState<Data[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isError, setIsError] = useState<boolean>(false);
   const [totalCount, setTotalCount] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
 
@@ -65,13 +66,14 @@ function useFetchData(page: string|undefined, pagenum?: number|undefined, id?: s
       } catch (error) {
         console.error('Error fetching data:', error);
         setIsLoading(false);
+        setIsError(true);
       }
     };
 
     fetchData();
   }, [id, page, pagenum]);
 
-  return [data, isLoading, totalCount, totalPages];
+  return [data, isLoading, isError, totalCount, totalPages];
 }
 
 export default useFetchData;
