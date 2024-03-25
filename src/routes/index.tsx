@@ -4,6 +4,7 @@ import { RouteObject } from "react-router";
 import ErrorPage from './ErrorPage/index';
 import Home from './Home/index';
 import Punish from './Punish/index';
+import Tops from './Tops/index';
 
 const route: Array<RouteObject> = [
     {
@@ -14,6 +15,10 @@ const route: Array<RouteObject> = [
     {
       path: "/punish/*",
       element: <Punish/>
+    },
+    {
+      path: "/tops/*",
+      element: <Tops/>
     }
 ]
 

@@ -1,8 +1,8 @@
-.punish {
+.economy {
   background: #323232;
   height: 100%;
 
-  .punish-section {
+  .economy-section {
     background: rgb(54, 54, 54) url(../../assets/images/banners/other_early_console_era.jpg);
     background-color: #00000069;
     background-blend-mode: multiply;
@@ -52,16 +52,6 @@
       gap: 1rem;
       color: white;
       width: 100%;
-
-      .buttons {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-
-        .child {
-          margin: 10px;
-        }
-      }
 
       .error {
         display: flex;
