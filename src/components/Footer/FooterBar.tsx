@@ -1,10 +1,37 @@
+import { useEffect, useState } from "react";
 import "./index.scss";
+import hitokoto from './../../util/getHitokoto';
 
 const Navbar = () => {
   const year = "2019"
   const copym = "WhCraftMC"
   const ICPURL = "https://icp.gov.moe/?keyword=20240990";
   const ICP = "萌ICP备20240990号";
+
+  const [data, isLoading, isError] = hitokoto();
+
+  const [time, setTime] = useState('00天00时00分00秒');
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const startTime = new Date('2019-09-01T00:00:00.000Z');
+    const duration = currentTime.getTime() - startTime.getTime();
+
+    const dd = String(Math.floor(duration / (1000 * 60 * 60 * 24))).padStart(2, '0');
+    const hh = String(Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+    const mm = String(Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+    const ss = String(Math.floor((duration % (1000 * 60)) / 1000)).padStart(2, '0');
+
+    setTime(`${dd}天${hh}时${mm}分${ss}秒`);
+  }, [currentTime]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <footer className="footer mcui-blackground-wool-dark">
@@ -30,8 +57,12 @@ const Navbar = () => {
         </div>
         <div className="right">
           <a className="icp" href={ICPURL} target="_blank" rel="noreferrer">{ICP}</a>
+          <p className="smallGrayText"></p>
           <p className="copyright">&copy;&nbsp;&nbsp;{year}&nbsp;-&nbsp;{new Date().getFullYear()}&nbsp;{copym} Design & Development.</p>
           <p className="copyright-phone">&copy;&nbsp;&nbsp;{year}&nbsp;-&nbsp;{new Date().getFullYear()}&nbsp;{copym}.</p>
+          <p className="smallGrayText">WhCraftMC已来到这个世界 {time}</p>
+          <p className="smallGrayText">声明：本站与Mojang以及微软公司没有从属关系</p>
+          {!isLoading && !isError && (<p className="smallGrayText">{data.hitokoto} - ⌈{data.from}⌋</p>)}
         </div>
       </div>
     </footer>
