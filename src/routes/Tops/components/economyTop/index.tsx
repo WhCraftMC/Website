@@ -21,39 +21,41 @@ function DataTable() {
                 </>
               ) : (
                 <>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>排名</th>
-                        <th>游戏ID</th>
-                        <th>铜币数量</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {data.map((item) => (
-                        <tr key={item.rank}>
-                          <td>
-                            {item.rank}
-                          </td>
-                          <td>
-                            <p>
-                              <img src={getFace(item.uuid)} alt="faces" className="faces"/><br/>
-                              {item.nickname}
-                            </p>
-                          </td>
-                          <td>
-                            <p>
-                              {item.balance_data}
-                            </p>
-                          </td>
+                  <div className="tables">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>排名</th>
+                          <th>游戏ID</th>
+                          <th>铜币数量</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {data.map((item) => (
+                          <tr key={item.rank}>
+                            <td>
+                              {item.rank}
+                            </td>
+                            <td>
+                              <p>
+                                <img src={getFace(item.uuid)} alt="faces" className="faces"/><br/>
+                                {item.nickname}
+                              </p>
+                            </td>
+                            <td>
+                              <p>
+                                {item.balance_data}
+                              </p>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                   <div className="table_footer">
-                    <button className={"btn_round" + (pagenum===totalPages ? ' disabled' : '')} onClick={() => setPagenum(pagenum+1)} disabled={pagenum===totalPages}><i className="mdui-icon material-icons">&#xe315;</i></button>
-                    <button className={"btn_round" + (pagenum===1 ? ' disabled' : '')} onClick={() => setPagenum(pagenum-1)} disabled={pagenum===1}><i className="mdui-icon material-icons">&#xe314;</i></button>
-                    <button className={"btn_round disabled"} onClick={() => setReloadnum(reloadnum+1)} title={`刷新次数: ${reloadnum}`} disabled><i className="mdui-icon material-icons">&#xe042;</i></button>
+                    <button className={"btn_round" + (pagenum===totalPages ? ' disabled' : '')} onClick={() => setPagenum(pagenum+1)} disabled={pagenum===totalPages}><i className="mdui-icon material-icons"></i></button>
+                    <button className={"btn_round" + (pagenum===1 ? ' disabled' : '')} onClick={() => setPagenum(pagenum-1)} disabled={pagenum===1}><i className="mdui-icon material-icons"></i></button>
+                    <button className={"btn_round disabled"} onClick={() => setReloadnum(reloadnum+1)} title={`刷新次数: ${reloadnum}`} disabled><i className="mdui-icon material-icons"></i></button>
                     <p className="text">{`${pagenum}-${totalPages} of ${totalCount}`}</p>
                   </div>
                 </>
