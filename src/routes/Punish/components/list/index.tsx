@@ -52,7 +52,7 @@ function DataTable(props: DataTableProps) {
           <ButtonText to="/punish?page=mutes" className="child">禁言列表</ButtonText>
         </div>
       )}
-      <div className={"table-container" + (!isLoading && !(data.length === 0) && !isError ? " mcui-blackground-wool-dark" : "")}>
+      <div className={"list-table-container" + (!isLoading && !(data.length === 0) && !isError ? " mcui-blackground-wool-dark" : "")}>
         {!isError ? (
           <>
           {!isLoading ? (
@@ -63,48 +63,50 @@ function DataTable(props: DataTableProps) {
                 </>
               ) : (
                 <>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>{getName(props.page)}ID</th>
-                        <th>游戏ID</th>
-                        <th>操作者</th>
-                        <th>原因</th>
-                        <th>日期</th>
-                        <th>失效日期</th>
-                        <th>生效服务器</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {data.map((item) => (
-                        <tr key={item.id} onClick={() => handleClick(`${item.id}`, getType(props.page))}>
-                          <td>
-                            {item.id}
-                          </td>
-                          <td>
-                            <p>
-                              <img src={getFace(item.uuid)} alt="faces" className="faces"/><br/>
-                              {item.name}
-                            </p>
-                          </td>
-                          <td>
-                            <p>
-                              <img src={getFace(item.uuid)} alt="byfaces" className="faces"/><br/>
-                              {item.banned_by_name }
-                            </p>
-                          </td>
-                          <td>{setLength(RawText(item.reason), 10)}</td>
-                          <td>{formattedTime(item.time, false)}</td>
-                          <td>{formattedTime(item.until, true)}</td>
-                          <td>{item.server_scope}</td>
+                  <div className="tables">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>{getName(props.page)}ID</th>
+                          <th>游戏ID</th>
+                          <th>操作者</th>
+                          <th>原因</th>
+                          <th>日期</th>
+                          <th>失效日期</th>
+                          <th>生效服务器</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {data.map((item) => (
+                          <tr key={item.id} onClick={() => handleClick(`${item.id}`, getType(props.page))}>
+                            <td>
+                              {item.id}
+                            </td>
+                            <td>
+                              <p>
+                                <img src={getFace(item.uuid)} alt="faces" className="faces"/><br/>
+                                {item.name}
+                              </p>
+                            </td>
+                            <td>
+                              <p>
+                                <img src={getFace(item.uuid)} alt="byfaces" className="faces"/><br/>
+                                {item.banned_by_name }
+                              </p>
+                            </td>
+                            <td>{setLength(RawText(item.reason), 10)}</td>
+                            <td>{formattedTime(item.time, false)}</td>
+                            <td>{formattedTime(item.until, true)}</td>
+                            <td>{item.server_scope}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                   <div className="table_footer">
-                    <button className={"btn_round" + (pagenum===totalPages ? ' disabled' : '')} onClick={() => setPagenum(pagenum+1)} disabled={pagenum===totalPages}><i className="mdui-icon material-icons">&#xe315;</i></button>
-                    <button className={"btn_round" + (pagenum===1 ? ' disabled' : '')} onClick={() => setPagenum(pagenum-1)} disabled={pagenum===1}><i className="mdui-icon material-icons">&#xe314;</i></button>
-                    <button className={"btn_round disabled"} disabled><i className="mdui-icon material-icons">&#xe042;</i></button>
+                    <button className={"btn_round" + (pagenum===totalPages ? ' disabled' : '')} onClick={() => setPagenum(pagenum+1)} disabled={pagenum===totalPages}><i className="mdui-icon material-icons"></i></button>
+                    <button className={"btn_round" + (pagenum===1 ? ' disabled' : '')} onClick={() => setPagenum(pagenum-1)} disabled={pagenum===1}><i className="mdui-icon material-icons"></i></button>
+                    <button className={"btn_round disabled"} disabled><i className="mdui-icon material-icons"></i></button>
                     <p className="text">{`${pagenum}-${totalPages} of ${totalCount}`}</p>
                   </div>
                 </>

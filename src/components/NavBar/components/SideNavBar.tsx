@@ -35,6 +35,12 @@ const SideNavbar: FC<ISideNavbar> = ({ isOpen, onClose, closeNav }) => {
               </Link>
             </li>
             <li>
+              <Link to="/tops" className="linkto" reloadDocument>
+              <i className="mdui-icon material-icons"></i>
+                &nbsp;排行榜
+              </Link>
+            </li>
+            <li>
               <Link to="/punish" className="linkto" reloadDocument>
                 <i className="mdui-icon material-icons"></i>
                 &nbsp;处罚

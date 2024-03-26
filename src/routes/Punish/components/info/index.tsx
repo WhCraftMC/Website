@@ -41,7 +41,7 @@ function DataTable(props: DataProps) {
             {props.id !== undefined && props.page !== undefined && (
               <>
                 {!isLoading ? (
-                  <>
+                  <div className="tables">
                     {data.length === 0 ? (
                       <h2>空空如也</h2>
                     ) : (
@@ -100,7 +100,7 @@ function DataTable(props: DataProps) {
                         </table>
                       </>
                     )}
-                  </>
+                  </div>
                 ) : (
                   <>
                     <h2>少女祈祷中...</h2>
