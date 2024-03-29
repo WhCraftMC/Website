@@ -22,6 +22,10 @@ function index() {
 
   return (
     <div>
+      <audio controlsList="contorls" autoPlay style={{display: "none"}}>
+        <source src="https://music.163.com/song/media/outer/url?id=1887199303.mp3" type="audio/mpeg" />
+      </audio>
+      
       <main className="main-section">
         <img src={NCLogo} alt="logo" className="logo"/>
         <h2>Minecraft 小型群组服</h2>
