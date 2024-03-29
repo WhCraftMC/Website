@@ -22,9 +22,10 @@ function index() {
 
   return (
     <div>
-      <>
-        <iframe style={{display: "none"}} src="//music.163.com/outchain/player?type=2&id=1887199303&auto=1&height=32"/>
-      </>
+      <audio controlsList="contorls" autoPlay style={{display: "none"}}>
+        <source src="https://music.163.com/song/media/outer/url?id=1887199303.mp3" type="audio/mpeg" />
+      </audio>
+      
       <main className="main-section">
         <img src={NCLogo} alt="logo" className="logo"/>
         <h2>Minecraft 小型群组服</h2>
