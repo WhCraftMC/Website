@@ -20,12 +20,24 @@ function index() {
     window.scroll(0, window.innerHeight);
   };
 
+  window.onload = function() {
+    toggleSound();
+  }
+
+  function toggleSound() {
+    var music = document.getElementById("adm") as HTMLAudioElement;
+
+    if (music.paused) {
+      music.play();
+    }
+  }
+
   return (
     <div>
-      <audio controlsList="contorls" autoPlay style={{display: "none"}}>
+      <audio preload="metadata" controls autoPlay id="adm" style={{display: "none"}}>
         <source src="https://music.163.com/song/media/outer/url?id=1887199303.mp3" type="audio/mpeg" />
       </audio>
-      
+
       <main className="main-section">
         <img src={NCLogo} alt="logo" className="logo"/>
         <h2>Minecraft 小型群组服</h2>
@@ -46,7 +58,7 @@ function index() {
               <div className="col-1">
                 <h2>WhCraft欢迎您</h2>
                   <p>
-                    &nbsp;&nbsp;这是一个和谐的服务器，提供了稳定流畅的体验，
+                    &nbsp;&nbsp;这是一个和谐的服务器，提供了稳定“流畅”的体验，
                     自从2019首次开服以来，我们一直在努力创建一个环境良好的服务器。<br/>
                     &nbsp;&nbsp;我们保证不做影响平衡、破坏公平的行为。欢迎玩家
                     提出意见或者举报违规行为，请大家自觉遵守游戏规则。<br/><br/>
