@@ -21,7 +21,7 @@ function index() {
   };
 
   window.onload = function() {
-    toggleSound();
+    setInterval("toggleSound()", 300);
   }
 
   function toggleSound() {
