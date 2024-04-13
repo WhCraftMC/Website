@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import useFetchData from '../../utils/FetchData';
 import { RawText, formattedTime } from '../../utils/TextTools';
 import './index.scss';
