@@ -62,7 +62,7 @@ const Navbar = () => {
           <p className="copyright-phone">&copy;&nbsp;&nbsp;{year}&nbsp;-&nbsp;{new Date().getFullYear()}&nbsp;{copym}.</p>
           <p className="smallGrayText">WhCraftMC已来到这个世界 {time}</p>
           <p className="smallGrayText">声明：本站与Mojang以及微软公司没有从属关系</p>
-          {!isLoading && !isError && (<p className="smallGrayText">{data.hitokoto} - ⌈{data.from}⌋</p>)}
+          {!isLoading && !isError && (<p className="smallGrayText hitokoto">{data.hitokoto} - ⌈{data.from}⌋</p>)}
         </div>
       </div>
     </footer>

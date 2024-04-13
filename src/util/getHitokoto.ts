@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import api from "./Api";
+import axios from "axios";
 
 function useFetchData(): [any, boolean, boolean] {
     const [data, setData] = useState();
@@ -8,7 +8,7 @@ function useFetchData(): [any, boolean, boolean] {
 
     const fetchData = useCallback(async () => {
         try {
-            const response = await api.get("/hitokoto");
+            const response = await axios.get("https://v1.hitokoto.cn/");
             setData(response.data.data);
             setIsLoading(false);
         } catch (error) {
