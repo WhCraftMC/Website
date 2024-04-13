@@ -6,8 +6,15 @@ import { useNavigate } from 'react-router-dom';
 function DataTable() {
   const [pagenum, setPagenum] = useState(1);
   const [reloadnum, setReloadnum] = useState(0);
+  const [isReloading, setIsReloading] = useState(false);
 
-  let [data, isLoading, isError, totalCount, totalPages] = useFetchData(pagenum);
+  let [data, isLoading, isError, totalCount, totalPages] = useFetchData(pagenum, reloadnum);
+
+  const handleReload = () => {
+    setIsReloading(true);
+    setReloadnum(reloadnum + 1);
+    setIsReloading(false);
+  };
 
   return (
     <div className={"table-container" + (!isLoading && !(data.length === 0) && !isError ? " mcui-blackground-wool-dark" : "")}>
@@ -55,7 +62,7 @@ function DataTable() {
                   <div className="table_footer">
                     <button className={"btn_round" + (pagenum===totalPages ? ' disabled' : '')} onClick={() => setPagenum(pagenum+1)} disabled={pagenum===totalPages}><i className="mdui-icon material-icons"></i></button>
                     <button className={"btn_round" + (pagenum===1 ? ' disabled' : '')} onClick={() => setPagenum(pagenum-1)} disabled={pagenum===1}><i className="mdui-icon material-icons"></i></button>
-                    <button className={"btn_round disabled"} onClick={() => setReloadnum(reloadnum+1)} title={`刷新次数: ${reloadnum}`} disabled><i className="mdui-icon material-icons"></i></button>
+                    <button className={"btn_round" + (isReloading ? 'disabled' : '')} onClick={handleReload} title={`刷新次数: ${reloadnum}`} disabled={isReloading}><i className="mdui-icon material-icons"></i></button>
                     <p className="text">{`${pagenum}-${totalPages} of ${totalCount}`}</p>
                   </div>
                 </>
