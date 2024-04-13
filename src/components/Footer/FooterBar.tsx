@@ -57,12 +57,13 @@ const Navbar = () => {
         </div>
         <div className="right">
           <a className="icp" href={ICPURL} target="_blank" rel="noreferrer">{ICP}</a>
-          <p className="smallGrayText"></p>
+          
           <p className="copyright">&copy;&nbsp;&nbsp;{year}&nbsp;-&nbsp;{new Date().getFullYear()}&nbsp;{copym} Design & Development.</p>
           <p className="copyright-phone">&copy;&nbsp;&nbsp;{year}&nbsp;-&nbsp;{new Date().getFullYear()}&nbsp;{copym}.</p>
           <p className="smallGrayText">WhCraftMC已来到这个世界 {time}</p>
           <p className="smallGrayText">声明：本站与Mojang以及微软公司没有从属关系</p>
           {!isLoading && !isError && (<p className="smallGrayText hitokoto">{data.hitokoto} - ⌈{data.from}⌋</p>)}
+          {isError && (<p className="smallGrayText hitokoto">加载一言失败</p>)}
         </div>
       </div>
     </footer>

@@ -36,7 +36,7 @@ interface Data {
   };
 }
 
-function useFetchData(page: string|undefined, pagenum?: number|undefined, id?: string|undefined): [Data[], boolean, boolean, number, number] {
+function useFetchData(page: string|undefined, reloadnum: number|undefined, pagenum?: number|undefined, id?: string|undefined): [Data[], boolean, boolean, number, number] {
   const [data, setData] = useState<Data[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [isError, setIsError] = useState<boolean>(false);
@@ -71,7 +71,7 @@ function useFetchData(page: string|undefined, pagenum?: number|undefined, id?: s
     };
 
     fetchData();
-  }, [id, page, pagenum]);
+  }, [id, page, pagenum, reloadnum]);
 
   return [data, isLoading, isError, totalCount, totalPages];
 }

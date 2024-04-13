@@ -8,7 +8,7 @@ interface Data {
   balance_data: number;
 }
 
-function useFetchData(pagenum: number|undefined): [Data[], boolean, boolean, number, number] {
+function useFetchData(pagenum: number|undefined, reloadnum: number|undefined): [Data[], boolean, boolean, number, number] {
   const [data, setData] = useState<Data[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [isError, setIsError] = useState<boolean>(false);
@@ -31,7 +31,8 @@ function useFetchData(pagenum: number|undefined): [Data[], boolean, boolean, num
     };
 
     fetchData();
-  }, [pagenum]);
+    // 依赖reloadnum很怪,但有效
+  }, [pagenum, reloadnum]);
 
   return [data, isLoading, isError, totalCount, totalPages];
 }

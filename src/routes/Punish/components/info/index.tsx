@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useFetchData from '../../utils/FetchData';
 import { RawText, formattedTime } from '../../utils/TextTools';
 import './index.scss';
@@ -30,7 +30,7 @@ function getEBName(page: string|undefined) {
 }
 
 function DataTable(props: DataProps) {
-  const [data, isLoading, isError] = useFetchData(props.page, undefined, props.id);
+  const [data, isLoading, isError] = useFetchData(props.page, undefined, undefined, props.id);
 
   return (
     <>

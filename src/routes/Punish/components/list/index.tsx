@@ -32,8 +32,10 @@ function getType(page: string|undefined) {
 function DataTable(props: DataTableProps) {
   const navigate = useNavigate();
   const [pagenum, setPagenum] = useState(1);
+  const [reloadnum, setReloadnum] = useState(0);
+  const [isReloading, setIsReloading] = useState(false);
 
-  let [data, isLoading, isError, totalCount, totalPages] = useFetchData(props.page, pagenum);
+  let [data, isLoading, isError, totalCount, totalPages] = useFetchData(props.page, reloadnum, pagenum);
 
   const handleClick = (id: string, page?: string) => {
     if (page!==null || page!==undefined) {
@@ -41,6 +43,12 @@ function DataTable(props: DataTableProps) {
       return;
     }
     navigate(`/punish?page=mutes&id=${id}`);
+  };
+
+  const handleReload = () => {
+    setIsReloading(true);
+    setReloadnum(reloadnum + 1);
+    setIsReloading(false);
   };
 
   return (
@@ -106,7 +114,7 @@ function DataTable(props: DataTableProps) {
                   <div className="table_footer">
                     <button className={"btn_round" + (pagenum===totalPages ? ' disabled' : '')} onClick={() => setPagenum(pagenum+1)} disabled={pagenum===totalPages}><i className="mdui-icon material-icons"></i></button>
                     <button className={"btn_round" + (pagenum===1 ? ' disabled' : '')} onClick={() => setPagenum(pagenum-1)} disabled={pagenum===1}><i className="mdui-icon material-icons"></i></button>
-                    <button className={"btn_round disabled"} disabled><i className="mdui-icon material-icons"></i></button>
+                    <button className={"btn_round" + (isReloading ? 'disabled' : '')} onClick={handleReload} title={`刷新次数: ${reloadnum}`} disabled={isReloading}><i className="mdui-icon material-icons"></i></button>
                     <p className="text">{`${pagenum}-${totalPages} of ${totalCount}`}</p>
                   </div>
                 </>
