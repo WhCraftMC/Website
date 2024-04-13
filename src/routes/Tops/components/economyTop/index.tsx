@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import useFetchData from '../../utils/FetchData';
 import './index.scss';
-import { useNavigate } from 'react-router-dom';
 
 function DataTable() {
   const [pagenum, setPagenum] = useState(1);
