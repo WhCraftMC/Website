@@ -27,9 +27,7 @@ function useFetchData(page: number|undefined, reloadnum: number|undefined, pagen
     const fetchData = async () => {
       try {
         if (page!==undefined) {
-          const response = await api.post("/afdian/list", {
-            page: page
-          });
+          const response = await api.get(`/afdian/list?page=${page}`);
           setData(response.data.data.list);
           setTotalPages(response.data.data.total_page);
           setTotalCount(response.data.data.total_count);
