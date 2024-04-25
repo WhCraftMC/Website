@@ -41,7 +41,7 @@ const Navbar = () => {
           <a href="/punish">处罚</a>
           <a href="/docs/about">关于</a>
           <a href="/docs/eula">Eula</a>
-          <a href="/docs/donate">捐赠</a>
+          <a href="/donate">捐赠</a>
         </div>
         <div className="right"></div>
       </div>
