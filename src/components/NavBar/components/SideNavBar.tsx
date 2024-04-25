@@ -73,7 +73,7 @@ const SideNavbar: FC<ISideNavbar> = ({ isOpen, onClose, closeNav }) => {
               &nbsp;&nbsp;其他
             </h2>
             <li>
-              <Link to="/docs/donate" className="linkto" reloadDocument>
+              <Link to="/donate" className="linkto" reloadDocument>
                 <i className="mdui-icon material-icons"></i>
                 &nbsp;捐赠
               </Link>
