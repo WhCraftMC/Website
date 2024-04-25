@@ -2,14 +2,16 @@ import './index.scss';
 import donateImg from './../../assets/images/docs/donate.png'
 import { useState } from 'react';
 import useFetchData from './utils/FetchData';
+import { useLocation } from 'react-router-dom';
 
-function index() {
+function Index() {
   document.title = "我要恰饭 | WhCraft";
   
   const [pagenum, setPagenum] = useState(1);
   const [reloadnum, setReloadnum] = useState(0);
   const [isReloading, setIsReloading] = useState(false);
 
+  const location = useLocation();
   const params = new URLSearchParams(location.search);
   const page = (params.get('page') as unknown as number) | 1;
 
@@ -98,4 +100,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
