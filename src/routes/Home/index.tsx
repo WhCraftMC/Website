@@ -5,11 +5,7 @@ import './index.scss';
 import 'mdui/mdui.css';
 
 import { ReactComponent as Arrow } from "../../assets/images/icons/blunt-arrow-down.svg";
-import ss1 from './../../assets/images/misc/s-s-1.png'
-import sb1 from './../../assets/images/misc/s-b-1.png'
-import sw0 from './../../assets/images/misc/s-w-0.png'
 import NCLogo from './../../assets/images/logos/noicon.logo.png';
-import AboutImg from './../..//assets/images/misc/about-image.png'
 
 import ButtonText from '../../components/Button';
 
@@ -68,7 +64,7 @@ function index() {
                   <p className="testimonial-text" id="poem-text"></p>
               </div>
               <div className="col-2">
-                <img src={AboutImg} className="about-img" alt="about-img"/>
+                <img src="https://img.picui.cn/free/2024/06/08/66646f1ea5e3d.png" className="about-img" alt="about-img"/>
               </div>
           </div>
           </div>
@@ -179,7 +175,7 @@ function index() {
 
           <div className="row">
             <div className="card mcui-background-wool-light">
-              <img src={ss1} className="img" alt="ss1"/>
+              <img src="https://img.picui.cn/free/2024/06/09/66656e57269fa.png" className="img" alt="ss1"/>
               <div className="text">
                 <h2>插件生存</h2>
                 <p>类原版的高版本生存服务器，保留原汁原味玩法，增加了新的玩法<span className="line-through">(有点废肝)</span>，享受养老生活。</p>
@@ -189,7 +185,7 @@ function index() {
             </div>
 
             <div className="card mcui-background-wool-light">
-              <img src={sb1} className="img" alt="sb1"/>
+              <img src="https://img.picui.cn/free/2024/06/09/66656e571a456.png" className="img" alt="sb1"/>
               <div className="text">
                 <h2>空岛生存</h2>
                 <p>经典空岛生存服务器，保留原汁原味空岛玩法。<span className="line-through">(也可以叫上基友解锁多人运动)</span></p>
@@ -199,7 +195,7 @@ function index() {
             </div>
 
             <div className="card mcui-background-wool-light">
-              <img src={sw0} className="img" alt="sw0"/>
+              <img src="https://img.picui.cn/free/2024/06/09/66656e5712d96.png" className="img" alt="sw0"/>
               <div className="text">
                 <h2>？？？</h2>
                 <p>没想好做什么。</p>
