@@ -5,7 +5,6 @@ import List from './components/list/index';
 import Info from './components/info/index';
 
 import { useLocation } from 'react-router-dom';
-import ButtonText from '../../components/Button';
 
 function updateTitle(page: string|undefined) {
     if (page === 'warns') {

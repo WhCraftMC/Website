@@ -21,7 +21,8 @@ function index() {
   };
 
   window.onload = function() {
-    setInterval("toggleSound()", 300);
+    const use = setInterval(function() {toggleSound()}, 1000); // 延迟调用
+    clearInterval(use); // 跳出循环
   }
 
   function toggleSound() {

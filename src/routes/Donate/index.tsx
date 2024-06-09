@@ -134,6 +134,12 @@ function Index() {
               </div>
             </div>
           </div>
+
+          <br/>
+          <div>
+            <h1>直接捐赠</h1>
+            <img src={donateImg} alt="二维码"/>
+          </div>
           
         </article>
       </main>
