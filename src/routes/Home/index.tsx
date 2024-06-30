@@ -148,7 +148,7 @@ function index() {
             <div className="items mcui-blackground-wool-dark">
               <h6><i className="mdui-icon material-icons fontsize5">date_range</i></h6>
               <div className="text">
-                <h4>玩法多样</h4>
+                <h4>不换周目</h4>
                 <p>服务器永远也不会更换周目，若遭遇不可抗力需要更换周目，会公开存档下载。</p>
               </div>
             </div>
