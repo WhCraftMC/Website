@@ -1,12 +1,11 @@
 export function RawText(str: string) {
-    const newStr = str.replace(/&([a-zA-Z]+)([klmnor])?|&(\d+)/g, '');
-    return newStr;
+  return str.replace(/&(\w)/g, '');
 }
 
 export function setLength(str: string, length: number) {
-    const maxLength = length;
-    const newStr = str.length > maxLength ? str.substring(0, maxLength) + '...' : str;
-    return newStr;
+  const maxLength = length;
+  const newStr = str.length > maxLength ? str.substring(0, maxLength) + '...' : str;
+  return newStr;
 }
 
 export function formattedTime(timestamp: number, untime: boolean) {
