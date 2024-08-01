@@ -64,7 +64,7 @@ function index() {
                   <p className="testimonial-text" id="poem-text"></p>
               </div>
               <div className="col-2">
-                <img src="https://img.picui.cn/free/2024/06/08/66646f1ea5e3d.png" className="about-img" alt="about-img"/>
+                <img src="https://imghub.whcraft.top/file/514492958043325585bed.png" className="about-img" alt="about-img"/>
               </div>
           </div>
           </div>
@@ -84,21 +84,21 @@ function index() {
             <div className="slick-track">
               <div className="news-card">
                 <img src="https://www.minecraft.net/content/dam/games/minecraft/screenshots/nautilusshell-car.jpg" alt="news-img" className="news-img"/>
-                <h3>更新: 服务器更新至1.20.2</h3>
-                <p>2023-12-01 - rumble</p>
+                <h3>更新: 服务器更新至1.21</h3>
+                <p>2024-07-22 (rumble)</p>
                 <p>终于修完Bug了，累死了</p>
               </div>
               <div className="news-card">
                 <img src="https://www.minecraft.net/content/dam/games/minecraft/screenshots/cow-car.jpg" alt="news-img" className="news-img"/>
-                <h3>活动: 圣诞活动</h3>
-                <p>2022-06-18 - rumble</p>
-                <p>免费称号！确定不看看吗！活动截止2023-12-28</p>
+                <h3>占位符</h3>
+                <p>2000-01-01 (rumble)</p>
+                <p></p>
               </div>
               <div className="news-card">
                 <img src="https://www.minecraft.net/content/dam/games/badger/screenshots/Spookyfest_carousel.jpg" alt="news-img" className="news-img"/>
-                <h3>活动: 苦力怕之年(填充文本)</h3>
-                <p>2022-01-10 - 怎么一回事?</p>
-                <p>我是填充文本</p>
+                <h3>占位符</h3>
+                <p>2000-01-01 (rumble)</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -116,16 +116,16 @@ function index() {
             <div className="items mcui-blackground-wool-dark">
               <h6><i className="mdui-icon material-icons fontsize5">accessible</i></h6>
               <div className="text">
-                <h4>性能强劲*</h4>
-                <p>服务器采用E5处理器，32G运行内存，尽可能的让您的游戏更加稳定流畅。</p>
+                <h4>性能强劲(Bushi)</h4>
+                <p>服务器采用E5处理器，32G运行内存，尽可能的让您的游戏更加<span className="line-through">稳定流畅</span>。</p>
               </div>
             </div>
 
             <div className="items mcui-blackground-wool-dark">
               <h6><i className="mdui-icon material-icons fontsize5">grain</i></h6>
               <div className="text">
-                <h4>玩法多样</h4>
-                <p>目前已经开放数据包插件生存和插件空岛生存两个服务器。</p>
+                <h4>玩法特殊</h4>
+                <p><span className="line-through">超卡的</span>拥有自制mod包，与众不同。<span className="line-through">(没做完呢)</span>。</p>
               </div>
             </div>
 
@@ -133,7 +133,7 @@ function index() {
               <h6><i className="mdui-icon material-icons fontsize5">games</i></h6>
               <div className="text">
                 <h4>跨设备游玩*</h4>
-                <p>身边没有电脑？我们支持使用MC基岩版加入服务器，但因存在兼容性问题，强烈建议仅将其作为备用方式。</p>
+                <p>身边没有电脑？我们支持使用MC基岩版加入服务器，但因存在兼容性问题，强烈建议仅将其作为备用方式。(不支持mod服哦)</p>
               </div>
             </div>
 
@@ -175,27 +175,27 @@ function index() {
 
           <div className="row">
             <div className="card mcui-background-wool-light">
-              <img src="https://img.picui.cn/free/2024/06/09/66656e57269fa.png" className="img" alt="ss1"/>
+              <img src="https://imghub.whcraft.top/file/74c23711acfc4adbaf4d6.png" className="img" alt="ss1"/>
               <div className="text">
                 <h2>插件生存</h2>
-                <p>类原版的高版本生存服务器，保留原汁原味玩法，增加了新的玩法<span className="line-through">(有点废肝)</span>，享受养老生活。</p>
+                <p>类原版的高版本生存服务器，保留原汁原味玩法，增加了新的玩法<span className="line-through">(附魔书无限堆叠, 有点废肝)</span>，享受养老生活。</p>
                 <br/><br/>
                 <ButtonText to="https://status.whcraft.top" target="_blank">查看状态</ButtonText>
               </div>
             </div>
 
             <div className="card mcui-background-wool-light">
-              <img src="https://img.picui.cn/free/2024/06/09/66656e571a456.png" className="img" alt="sb1"/>
+              <img src="https://imghub.whcraft.top/file/3716df834c0bf67c4d6c2.png" className="img" alt="sb1"/>
               <div className="text">
-                <h2>空岛生存</h2>
-                <p>经典空岛生存服务器，保留原汁原味空岛玩法。<span className="line-through">(也可以叫上基友解锁多人运动)</span></p>
+                <h2>TuLar - Mod生存</h2>
+                <p>Mod有点多，可能略微有点卡。<span className="line-through">(配置要求较高)</span>内存够用就行(6G+)</p>
                 <br/><br/>
                 <ButtonText disabled to="#" target="_blank">正在开发</ButtonText>
               </div>
             </div>
 
             <div className="card mcui-background-wool-light">
-              <img src="https://img.picui.cn/free/2024/06/09/66656e5712d96.png" className="img" alt="sw0"/>
+              <img src="https://imghub.whcraft.top/file/7e97bd5d594d87e13934a.png" className="img" alt="sw0"/>
               <div className="text">
                 <h2>？？？</h2>
                 <p>没想好做什么。</p>
